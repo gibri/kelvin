@@ -1,7 +1,6 @@
 package org.apache.solr.kelvin.responseanalyzers;
 
 import java.io.StringReader;
-import java.util.List;
 import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -20,10 +19,10 @@ public class XmlResponseAnalyzer implements ResponseAnalyzer {
 	private DocumentBuilderFactory dbf;
 	private DocumentBuilder documentBuilder;
 	
-	public void config(JsonNode config) throws Exception {
+	/*public void config(JsonNode config) throws Exception {
 		dbf = DocumentBuilderFactory.newInstance();
 		documentBuilder = dbf.newDocumentBuilder();
-	}
+	}*/
 	
 	public void decode(Map<String,Object> previousResponses) throws Exception {
 		if (previousResponses.containsKey(QueryPerformer.RAW_RESPONSE) &&
@@ -34,7 +33,8 @@ public class XmlResponseAnalyzer implements ResponseAnalyzer {
 	}
 
 	public void configure(JsonNode config) throws Exception {
-		// pass
+		dbf = DocumentBuilderFactory.newInstance();
+		documentBuilder = dbf.newDocumentBuilder();
 		
 	}
 

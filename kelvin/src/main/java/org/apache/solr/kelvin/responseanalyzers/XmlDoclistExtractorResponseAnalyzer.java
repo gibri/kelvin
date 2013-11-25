@@ -53,9 +53,9 @@ public class XmlDoclistExtractorResponseAnalyzer implements ResponseAnalyzer {
 					String value = subel.getTextContent();
 					oDoc.put(fieldName, value);
 				}
-				response.add(oDoc);
 				subel = subel.getNextSibling();
 			}
+			response.add(oDoc);
 		}
 		previousResponses.put(DOC_LIST, response);
 	}

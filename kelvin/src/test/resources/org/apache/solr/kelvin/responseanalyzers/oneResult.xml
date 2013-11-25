@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">name,tag,body_all,vertical</str><str name="q">Codven:UB\-90</str></lst></lst><result name="response" numFound="1" start="0"><doc><arr name="tag"><str>CPM_UUSATELITEUU | USB</str></arr><str name="body_all">Cavo USB per NGM  NGM  tipologia : cavi e adattatori;compatibilità : universale;brand compatibile : ngm  Cavo Dati e Acc. Vari CPM_UUSATELITEUU | USB   /cavi-e-adattatori-NGM/d-2237985  Cavo USB per NGM KRYSTAL / LILITH / DANDY / ALITTLE / PIXY / STEEL Cavi e Adattatori accessorio</str><arr name="vertical"><int>0</int><int>10</int><int>20</int><int>30</int></arr><str name="name">Cavo USB per NGM </str></doc></result>
+</response>
