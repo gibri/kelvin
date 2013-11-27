@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response>
+ <responseHeader>
+ <field name='status'>0</field>
+ <field name='static_cache' val='false'>false</field>
+ <field name='lcache_time'>0</field>
+ <field name='wrapper_time'>439</field>
+ <field name='autofilter_time'>130</field>
+ <field name='server-name'>src-eprice-pre.eprice.lan</field>
+ <params>
+ <field name='test'>test</field>
+ </params>
+<logger-analysis><querystring><![CDATA[q=cavo]]></querystring><numfound>4709</numfound><originalQuery><![CDATA[cavo]]></originalQuery><autofilter>32</autofilter><queryType>eprice</queryType><solrContext>tech</solrContext><conteggi><tech></tech><media></media><lisci></lisci></conteggi></logger-analysis></responseHeader>
+<federator name='search'>
+ <responseHeader>
+ <query>
+ <field name='original_query'>cavo</field>
+ <field name='q'>cavo</field>
+ <field name='search_type'>phrase</field>
+ <field name='search_context'>tech</field>
+ <field name='search_boost'>[]</field>
+ <field name='is_satelite'>True</field>
+ <field name='is_redirect'>False</field>
+ </query>
+ <field name='status'>0</field>
+ <field name='solr_qtime'>18</field>
+ <field name='solr_time'>20</field>
+ <field name='solr-url'><![CDATA[http://solr-search-server:8080/solr/0/select/?q=cavo&start=0&rows=10&wt=json&&custom_caller=None&spellcheck.q=cavo&spellcheck.collate=true&&bf=sum(product(sum(ord(FiltroDispo),1),400),product(sub(has_image,1),2200))&fq=slug_preferenziale:%22/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori%22%20OR%20slug_preferenziale:%22/informatica/componenti-assemblaggio/tastiere%22%20OR%20slug_preferenziale:%22/informatica/networking-reti/cavi-di-rete%22%20OR%20slug_preferenziale:%22/informatica/componenti-assemblaggio/schede-video%22%20OR%20slug_preferenziale:%22/audio-video-elettronica/adattatori-e-cavetteria/cavi-digitali%22%20OR%20slug_preferenziale:%22/audio-video-elettronica/adattatori-e-cavetteria/cavi-analogici%22%20OR%20slug_preferenziale:%22/telefonia-mobile/cellulari-e-smartphone/accessori-iphone/cavi-e-adattatori%22%20OR%20slug_preferenziale:%22/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali/audio-cavi-e-adattatori%22%20OR%20slug_preferenziale:%22/informatica/portatili-notebook-tablet/cavi-di-sicurezza%22%20OR%20slug_preferenziale:%22/informatica/componenti-assemblaggio/mouse%22%20OR%20slug_preferenziale:%22/informatica/componenti-assemblaggio/cavi-e-adattatori-video/cavi-e-adattatori-video%22%20OR%20slug_preferenziale:%22/informatica/portatili-notebook-tablet/accessori-vari-notebook%22%20OR%20slug_preferenziale:%22/informatica/componenti-assemblaggio/cavi-vari-assemblaggio/cavi-vari-assemblaggio%22%20OR%20slug_preferenziale:%22/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/caricabatterie%22%20OR%20slug_preferenziale:%22/informatica/memorie-e-dischi/cavi-dati-hdd%22%20OR%20slug_preferenziale:%22/informatica/componenti-assemblaggio/schede-di-espansione%22%20OR%20slug_preferenziale:%22/audio-video-elettronica/home-video/staffe-e-mobili-per-tv%22%20OR%20slug_preferenziale:%22/casa-cucina/sicurezza-automazione-casa/videosorveglianza%22%20OR%20slug_preferenziale:%22/audio-video-elettronica/adattatori-e-cavetteria/cavi-antenna%22%20OR%20slug_preferenziale:%22/brico-giardino-animali/materiale-elettrico/raccoglicavi-e-canaline%22%20OR%20slug_preferenziale:%22/informatica/accessori-cavetteria/cavetteria/cavi-usb%22%20OR%20slug_preferenziale:%22/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali/caricabatterie%22%20OR%20slug_preferenziale:%22/informatica/monitor-multimedia/cuffie-e-auricolari-pc%22%20OR%20slug_preferenziale:%22/audio-video-elettronica/audio-e-mp3/accessori-ipod/alimentatori-e-cavi-ipod%22&facet.pivot=pidlevel_0,pidlevel_1,pidlevel_2,pidlevel_3&&qt=eprice&caller_id=eprice&bf=div(log(max(ranking3,1)),0.003200)&stats=true&stats.field=Promo]]></field>
+ <altriRisultati>12632</altriRisultati> <params>
+<autofilter enable='True'>
+   <altriRisultati enable='True' numres='12632'/>
+ <context>tech</context>
+  <slug>QlpoOTFBWSZTWRkL9iMAAF0fgAACiABAAJAAP-_fkEACsLtElkgkRU9NpU_VNkaT/9KBhEiEaU1PCIHqMUaGgAAAEkTRT00ym00p6g9TdJ3-ohW4VG5bdRkSRIXSVSVIF/pZ-rbI-JhPRQZgaSYJqtwP5b5zXYaJTRiuC9XZSUBkHFGIxkLNQv9-FTV69c37o_/F9XxHiiT5-FT5VP_g9xeyRIMg-7xDk8GgPTWkT-AYo_e20lXNO59GEN2MIZMDaWq/jgpJEgMm6VD0hFPfRoWCAJHS57ZUN2xIJJVU5QibA25_0LmjIyUWLxUDzcoIhO2r/JOBpgq1DzUkszoKEMcaqWdXK-kHUILC5RsBSGsLcRq8wK1AsXN0OLaRjPD5QTQoA/25ueANSUXXXAvZ4O8CFCRDzdF-SiYKC2Nv1mmzmeEInEx305CDImDGKfo2J6t1Dn/8pZHdb66HwC_agQB94yoi3KxgDtEu-0doJjCdSZmYqMSQ1OETujiwK1QGnDYE8M8/ANF2LGAKg5pGhbmr04uQZrBaeaGo1CpB9C6Pm2E_XUAXgT2FpBujHKrwwaTRPB_3/BUbb8K5LLlIypF5OKjzFzkkshoYxiYGjvvOckVtIZSQxwbroC9_ESwON8gQDVUZM/858HTuJxt5NJDOU3ChrUFYZznMoMooUAXQxiw-ZSdI3gm3eLyqlCIQd-2t3bJ7F3/JFOFCQGQv2Iw/</slug>
+  <slug_chiaro>/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori@OR@/informatica/componenti-assemblaggio/tastiere@OR@/informatica/networking-reti/cavi-di-rete@OR@/informatica/componenti-assemblaggio/schede-video@OR@/audio-video-elettronica/adattatori-e-cavetteria/cavi-digitali@OR@/audio-video-elettronica/adattatori-e-cavetteria/cavi-analogici@OR@/telefonia-mobile/cellulari-e-smartphone/accessori-iphone/cavi-e-adattatori@OR@/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali/audio-cavi-e-adattatori@OR@/informatica/portatili-notebook-tablet/cavi-di-sicurezza@OR@/informatica/componenti-assemblaggio/mouse@OR@/informatica/componenti-assemblaggio/cavi-e-adattatori-video/cavi-e-adattatori-video@OR@/informatica/portatili-notebook-tablet/accessori-vari-notebook@OR@/informatica/componenti-assemblaggio/cavi-vari-assemblaggio/cavi-vari-assemblaggio@OR@/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/caricabatterie@OR@/informatica/memorie-e-dischi/cavi-dati-hdd@OR@/informatica/componenti-assemblaggio/schede-di-espansione@OR@/audio-video-elettronica/home-video/staffe-e-mobili-per-tv@OR@/casa-cucina/sicurezza-automazione-casa/videosorveglianza@OR@/audio-video-elettronica/adattatori-e-cavetteria/cavi-antenna@OR@/brico-giardino-animali/materiale-elettrico/raccoglicavi-e-canaline@OR@/informatica/accessori-cavetteria/cavetteria/cavi-usb@OR@/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali/caricabatterie@OR@/informatica/monitor-multimedia/cuffie-e-auricolari-pc@OR@/audio-video-elettronica/audio-e-mp3/accessori-ipod/alimentatori-e-cavi-ipod</slug_chiaro>
+  <mostra_attributi>True</mostra_attributi>
+</autofilter>
+ <field name='view_mode'>lista</field>
+ <field name='q'>cavo</field>
+ <field name='nav_path'>None</field>
+ <field name='slug_path'>None</field>
+  <extra>QlpoOTFBWSZTWeFBuXYAAEcfgFEEf_AoAgwKP2fXCiAAdBKnqkaNtJNAPUaGjRmp/-qBKpiaaAAAaAAFFuaQabMEKpWDXxh6kjqaT0ULKWixlgm1ULiETGRMjOsQoDKob/fj79UEeDLVZgMd2MbL86OI1yuzkPpiW00G4o7yg9YqhQuRFH7L-LuSKcKEhwoNy7/AA==/</extra>
+  <extra_chiaro><![CDATA[{"datiic": [[10868, "Cavi e Adattatori in Telefonia &amp; Mobile"], 6733, 6734, 6832, [10851, "Cavi e Adattatori in Cellulari &amp; Smartphone"], 5947]}]]></extra_chiaro> <field name='nav_level'>2</field>
+ <field name='id_sito'>0</field>
+ <field name='rows'>10</field>
+ <field name='page'>1</field>
+ <field name='sort'>ranking</field>
+ </params>
+
+<slide_show_overlay>
+ <prev>0</prev>
+ <next>1</next>
+ <sku>3862741-2216786-3281676-2423720-3279511-5158318-5158323-2237985-3274596-4478693</sku>
+</slide_show_overlay></responseHeader>
+<result name='response' numFound='4709' start='0'>
+<doc> <field name="Codven">EIA2UHUN</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi e Adattatori" sort="0" />
+ <attributo id="272" nome="Compatibilità"  valore="Galaxy tab" sort="2" />
+ <attributo id="856" nome="Brand Compatibile"  valore="Samsung" sort="4" />
+ <attributo id="69" nome="Colore"  valore="Nero" sort="6" />
+</field>
+ <field name="image_file_dam">/825/100794825/n3862741.jpg</field>
+ <field name="Prod_Id">EIA2UHUN</field>
+ <field name="SEOurl">/cavi-e-adattatori-SAMSUNG/d-3862741</field>
+ <field name="sGenerico2">Cavo Adattatore da MicroUSB a HDMI Nero</field>
+ <field name="id">3862741</field>
+ <field name="sku">3862741</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">22.49</field>
+ <field name="name">Cavo Adattatore da MicroUSB a HDMI Nero</field>
+ <field name="imgCount">2</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-SAMSUNG/prod-776ID</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_JI211</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">542</field>
+ <field name="description">Cavo Adattatore MicroUSB ad HDMI Samsung EIA2UHUN per Samsung I9100 Galaxy S2 e Samsung Galaxy Note N7000 </field>
+ <field name="Dispo">16</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=SAMSUNG</field>
+ <field name="Url_Sku_10">/shop/SAMSUNG/id.2C43F1</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="SAMSUNG" immagine="img_nodispo.gif" name="Manufacturer">SAMSUNG</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">22.49</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-SAMSUNG/prod-A5325C</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">160</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">APCBS10BBEC</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi Dati" sort="0" />
+ <attributo id="856" nome="Brand Compatibile"  valore="Samsung" sort="4" />
+ <attributo id="69" nome="Colore"  valore="Nero" sort="6" />
+</field>
+ <field name="image_file_dam">/525/100190525/n3405509.jpg</field>
+ <field name="Prod_Id">APCBS10BBEC</field>
+ <field name="SEOurl">/cavi-e-adattatori-SAMSUNG/d-2216786</field>
+ <field name="sGenerico2">CAVO DATI USB SGH L760/S3600/i900 BLACK*</field>
+ <field name="id">2216786</field>
+ <field name="sku">2216786</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">4.49</field>
+ <field name="name">CAVO DATI USB SGH L760 / S3600 / i900 BLACK*</field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-SAMSUNG/prod-44GN5</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_B87F5</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">545</field>
+ <field name="description">CAVO DATI USB SGH L760 / S3600 / i900 BLACK*</field>
+ <field name="Dispo">9</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=SAMSUNG</field>
+ <field name="Url_Sku_10">/shop/SAMSUNG/id.199393</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="SAMSUNG" immagine="img_nodispo.gif" name="Manufacturer">SAMSUNG</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">4.49</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-SAMSUNG/prod-5C8010</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">160</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">ECC1DU2BBEIND</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi Dati" sort="0" />
+ <attributo id="272" nome="Compatibilità"  valore="Universale" sort="2" />
+</field>
+ <field name="image_file_dam">/533/100667533/n3281676.jpg</field>
+ <field name="Prod_Id">ECC1DU2BBEIND</field>
+ <field name="SEOurl">/cavi-e-adattatori-SAMSUNG/d-3281676</field>
+ <field name="sGenerico2">SAM CAVO DATI</field>
+ <field name="id">3281676</field>
+ <field name="sku">3281676</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">5.06</field>
+ <field name="name">SAM CAVO DATI</field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-SAMSUNG/prod-64JGF</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_GI796</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">487</field>
+ <field name="description"></field>
+ <field name="Dispo">93</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=SAMSUNG</field>
+ <field name="Url_Sku_10">/shop/SAMSUNG/id.254G4D</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="SAMSUNG" immagine="img_nodispo.gif" name="Manufacturer">SAMSUNG</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">5.06</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-SAMSUNG/prod-8AB928</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">304</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">DK100M</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi Dati" sort="0" />
+ <attributo id="272" nome="Compatibilità"  valore="LG L5 / L7 / L9" sort="2" />
+ <attributo id="856" nome="Brand Compatibile"  valore="LG" sort="4" />
+</field>
+ <field name="image_file_dam">/171/100249171/n3405723.jpg</field>
+ <field name="Prod_Id">DK100M</field>
+ <field name="SEOurl">/cavi-e-adattatori-LG/d-2423720</field>
+ <field name="sGenerico2">CAVO DATI USB LG L5/L7/L9 MICRO-USB°</field>
+ <field name="id">2423720</field>
+ <field name="sku">2423720</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">9.29</field>
+ <field name="name">CAVO DATI USB LG L5 / L7 / L9 MICRO-USB°</field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-LG/prod-4F3JB</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_C9EK5</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">404</field>
+ <field name="description">CAVO DATI USB LG L5 / L7 / L9 MICRO-USB°</field>
+ <field name="Dispo">21</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=LG</field>
+ <field name="Url_Sku_10">/shop/LG/id.1C059D</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="LG" immagine="img_nodispo.gif" name="Manufacturer">LG</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">9.29</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-LG/prod-66B270</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">160</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">CA92UIND</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi e Adattatori" sort="0" />
+ <attributo id="856" nome="Brand Compatibile"  valore="Nokia" sort="4" />
+</field>
+ <field name="image_file_dam">/529/100667529/n3279511.jpg</field>
+ <field name="Prod_Id">CA92UIND</field>
+ <field name="SEOurl">/cavi-e-adattatori-NOKIA/d-3279511</field>
+ <field name="sGenerico2">Cavo video per Nokia Versione BULK</field>
+ <field name="id">3279511</field>
+ <field name="sku">3279511</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">3.74</field>
+ <field name="name">Cavo video per Nokia Versione BULK</field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-NOKIA/prod-64GHA</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_GI2B4</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">306</field>
+ <field name="description">Cavo connessione video Nokia CA-92U in confezione industriale. Visualizza le registrazioni video effettuate con il tuo telefono cellulare Nokia compatibile sullo schermo di una TV o sul monitor di un PC compatibili con il cavo di connessione video Nokia CA-92U. Puoi anche utilizzarlo per videoconferenze.</field>
+ <field name="Dispo">2</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=NOKIA</field>
+ <field name="Url_Sku_10">/shop/NOKIA/id.2548D7</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="NOKIA" immagine="img_nodispo.gif" name="Manufacturer">NOKIA</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">3.74</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-NOKIA/prod-8AA951</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">304</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">GG100019</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi e Adattatori" sort="0" />
+</field>
+ <field name="image_file_dam">/533/101290533/5158318.jpg</field>
+ <field name="Prod_Id">GG100019</field>
+ <field name="SEOurl">/cavi-e-adattatori-GECKO/d-5158318</field>
+ <field name="sGenerico2">Cavo audio da 3,5mm a 3,5mm gecko</field>
+ <field name="id">5158318</field>
+ <field name="sku">5158318</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">8.39</field>
+ <field name="name">Cavo audio da 3,5mm a 3,5mm gecko</field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-GECKO/prod-9J1NM</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_15AKI4</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">339</field>
+ <field name="description">Cavo audio da 3,5mm a 3,5mm gecko. Compatibile con: iPod - iPad - iPhone 3G - iPhone 3GS - iPhone 4 - iPhone 4S</field>
+ <field name="Dispo">62</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=GECKO</field>
+ <field name="Url_Sku_10">/shop/GECKO/id.3ACFE8</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field  name="Manufacturer">GECKO</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">8.39</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-GECKO/prod-10B7B79</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">433</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">GG100024</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi e Adattatori" sort="0" />
+</field>
+ <field name="image_file_dam">/537/101290537/5158323.jpg</field>
+ <field name="Prod_Id">GG100024</field>
+ <field name="SEOurl">/cavi-e-adattatori-GECKO/d-5158323</field>
+ <field name="sGenerico2">Cavo audio piatto da 3,5mm a 3,5mm gecko</field>
+ <field name="id">5158323</field>
+ <field name="sku">5158323</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">10.69</field>
+ <field name="name">Cavo audio piatto da 3,5mm a 3,5mm gecko</field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-GECKO/prod-9J1O0</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_15AKI9</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">339</field>
+ <field name="description">Cavo audio piatto da 3,5mm a 3,5mm gecko. Compatibile con: Universale</field>
+ <field name="Dispo">28</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=GECKO</field>
+ <field name="Url_Sku_10">/shop/GECKO/id.3ACFED</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field  name="Manufacturer">GECKO</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">10.69</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-GECKO/prod-10B7B81</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">433</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">UB-90</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi e Adattatori" sort="0" />
+ <attributo id="272" nome="Compatibilità"  valore="Universale" sort="2" />
+ <attributo id="856" nome="Brand Compatibile"  valore="NGM" sort="4" />
+</field>
+ <field name="image_file_dam">/572/100306572/n3406286.jpg</field>
+ <field name="Prod_Id">UB-90</field>
+ <field name="SEOurl">/cavi-e-adattatori-NGM/d-2237985</field>
+ <field name="sGenerico2">Cavo USB per NGM </field>
+ <field name="id">2237985</field>
+ <field name="sku">2237985</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">8.29</field>
+ <field name="name">Cavo USB per NGM </field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-NGM/prod-45IP9</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_BADGF</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">261</field>
+ <field name="description">Cavo USB per NGM KRYSTAL / LILITH / DANDY / ALITTLE / PIXY / STEEL</field>
+ <field name="Dispo">5</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=NGM</field>
+ <field name="Url_Sku_10">/shop/NGM/id.19D8F3</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="NGM" immagine="img_nodispo.gif" name="Manufacturer">NGM</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">8.29</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-NGM/prod-604869</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">169</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">DCM410</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi Dati" sort="0" />
+ <attributo id="272" nome="Compatibilità"  valore="Universale" sort="2" />
+ <attributo id="856" nome="Brand Compatibile"  valore="HTC" sort="4" />
+ <attributo id="69" nome="Colore"  valore="Nero" sort="6" />
+</field>
+ <field name="image_file_dam">/140/100596140/n3405716.jpg</field>
+ <field name="Prod_Id">DCM410</field>
+ <field name="SEOurl">/cavi-e-adattatori-HTC/d-3274596</field>
+ <field name="sGenerico2">CAVO DATI HTC HD MICRO-USB BLACK</field>
+ <field name="id">3274596</field>
+ <field name="sku">3274596</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">5.54</field>
+ <field name="name">CAVO DATI HTC HD MICRO-USB BLACK</field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-HTC/prod-649O9</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_GHC83</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">292</field>
+ <field name="description">CAVO DATI HTC HD MICRO-USB BLACK</field>
+ <field name="Dispo">3</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=HTC</field>
+ <field name="Url_Sku_10">/shop/HTC/id.2538D5</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="HTC" immagine="img_nodispo.gif" name="Manufacturer">HTC</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">5.54</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-HTC/prod-8A8640</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">304</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc><doc> <field name="Codven">CABLESET1</field>
+ <field name="infoold"> <attributo id="15" nome="Tipologia"  valore="Cavi e Adattatori" sort="0" />
+ <attributo id="272" nome="Compatibilità"  valore="Universale" sort="2" />
+</field>
+ <field name="image_file_dam">/272/101049272/n4478693.jpg</field>
+ <field name="Prod_Id">CABLESET1</field>
+ <field name="SEOurl">/cavi-e-adattatori-PURO/d-4478693</field>
+ <field name="sGenerico2">Set cavi ricarica e sincronizzazione</field>
+ <field name="id">4478693</field>
+ <field name="sku">4478693</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">0</field>
+ <field name="Promo">15.79</field>
+ <field name="name">Set cavi ricarica e sincronizzazione</field>
+ <field name="imgCount">1</field>
+ <field name="PathCat3">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Url_Slug_20">/shop/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="Ricondizionato">False</field>
+<slug_preferenziale><slug is_store="0" path="/telefonia-mobile"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Telefonia &amp; Mobile</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone"  indexed_google="True" image_ref="/691/101214691/n4967196.jpg">Cellulari &amp; Smartphone</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili"  indexed_google="True" image_ref="img_nodispo.gif">Accessori Telefonia Compatibili</slug><slug is_store="0" path="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori"  indexed_google="True" image_ref="/007/101155007/n4783509.jpg">Cavi e Adattatori</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/cavi-e-adattatori-PURO/prod-8BEGE</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori/item_120CG2</field>
+ <field name="Url_Slug_40">/regali/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="ranking">263</field>
+ <field name="description">Set di cavi per la ricarica e la sincronizzazione dedicati ai dispositivi Apple, micro USB e mini USB. Le piccole dimensioni li rendono accessori perfetti per coloro che desiderano connettere e ricaricare i propri dispositivi in viaggio.</field>
+ <field name="Dispo">699</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori&amp;br=PURO</field>
+ <field name="Url_Sku_10">/shop/PURO/id.32AA39</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="PURO" immagine="img_nodispo.gif" name="Manufacturer">PURO</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="descCat3">Cavo Dati e Acc. Vari</field>
+ <field name="descCat2">Cellulari e Smartphone</field>
+ <field name="descCat1">Telefonia</field>
+ <field name="Url_Slug_30">/promo/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="store_slugs">/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+ <field name="idSito">0</field>
+ <field name="costo">15.79</field>
+ <field name="Url_Sku_30">/vendita/telefonia-mobile-PURO/prod-C0A71B</field>
+ <field name="IDCat1">353</field>
+ <field name="iGenerico2">387</field>
+ <field name="IDCat3">3056</field>
+ <field name="IDCat2">441</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc></result>
+<facets>
+<tree>
+ <nodo level="1" selected="False">
+  <field name='id'>/5769</field>
+  <field name='count'>3376</field>
+  <field name='label'>Informatica</field>
+  <field name='slug'>/informatica</field>
+  <field name='is_store'>False</field>
+  <field name='indexed_google'>True</field>
+  <field name='image_ref'>/666/101219666/n4897203.jpg</field>
+  <nodo level="2" selected="False">
+   <field name='id'>/5769/5829</field>
+   <field name='count'>76</field>
+   <field name='label'>Portatili, Notebook &amp; Tablet</field>
+   <field name='slug'>/informatica/portatili-notebook-tablet</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/047/101077047/n4711097.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5829/6925</field>
+    <field name='count'>46</field>
+    <field name='label'>Cavi di sicurezza</field>
+    <field name='slug'>/informatica/portatili-notebook-tablet/cavi-di-sicurezza</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/205/101048205/n4484513.jpg</field>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5829/6919</field>
+    <field name='count'>30</field>
+    <field name='label'>Accessori Vari Notebook</field>
+    <field name='slug'>/informatica/portatili-notebook-tablet/accessori-vari-notebook</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/180/100472180/n3615738.jpg</field>
+   </nodo>
+  </nodo>
+  <nodo level="2" selected="False">
+   <field name='id'>/5769/5822</field>
+   <field name='count'>970</field>
+   <field name='label'>Componenti Assemblaggio</field>
+   <field name='slug'>/informatica/componenti-assemblaggio</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/945/101212945/n4966032.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5822/6733</field>
+    <field name='count'>6</field>
+    <field name='label'>Schede Video</field>
+    <field name='slug'>/informatica/componenti-assemblaggio/schede-video</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/126/101059126/n4577797.jpg</field>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5822/6726</field>
+    <field name='count'>179</field>
+    <field name='label'>Mouse</field>
+    <field name='slug'>/informatica/componenti-assemblaggio/mouse</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/756/101133756/n4750138.jpg</field>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5822/6734</field>
+    <field name='count'>87</field>
+    <field name='label'>Tastiere</field>
+    <field name='slug'>/informatica/componenti-assemblaggio/tastiere</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/213/100173213/n2066001.jpg</field>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5822/6731</field>
+    <field name='count'>49</field>
+    <field name='label'>Schede di Espansione</field>
+    <field name='slug'>/informatica/componenti-assemblaggio/schede-di-espansione</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/890/100974890/n4122229.jpg</field>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5822/6715</field>
+    <field name='count'>390</field>
+    <field name='label'>Cavi e Adattatori Video</field>
+    <field name='slug'>/informatica/componenti-assemblaggio/cavi-e-adattatori-video</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/047/101051047/n3649235.jpg</field>
+    <nodo level="4" selected="False">
+     <field name='id'>/5769/5822/6715/7962</field>
+     <field name='count'>390</field>
+     <field name='label'>Cavi e Adattatori Video</field>
+     <field name='slug'>/informatica/componenti-assemblaggio/cavi-e-adattatori-video/cavi-e-adattatori-video</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/400/101056400/n4215645.jpg</field>
+    </nodo>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5822/6716</field>
+    <field name='count'>259</field>
+    <field name='label'>Cavi vari assemblaggio</field>
+    <field name='slug'>/informatica/componenti-assemblaggio/cavi-vari-assemblaggio</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/904/101119904/n4704591.jpg</field>
+    <nodo level="4" selected="False">
+     <field name='id'>/5769/5822/6716/7963</field>
+     <field name='count'>259</field>
+     <field name='label'>Cavi vari assemblaggio</field>
+     <field name='slug'>/informatica/componenti-assemblaggio/cavi-vari-assemblaggio/cavi-vari-assemblaggio</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/111/100674111/n3105497.jpg</field>
+    </nodo>
+   </nodo>
+  </nodo>
+  <nodo level="2" selected="False">
+   <field name='id'>/5769/5824</field>
+   <field name='count'>39</field>
+   <field name='label'>Memorie e dischi</field>
+   <field name='slug'>/informatica/memorie-e-dischi</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/438/100223438/n4289475.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5824/6759</field>
+    <field name='count'>39</field>
+    <field name='label'>Cavi dati HDD</field>
+    <field name='slug'>/informatica/memorie-e-dischi/cavi-dati-hdd</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/049/101186049/n4861465.jpg</field>
+   </nodo>
+  </nodo>
+  <nodo level="2" selected="False">
+   <field name='id'>/5769/5826</field>
+   <field name='count'>158</field>
+   <field name='label'>Monitor &amp; Multimedia</field>
+   <field name='slug'>/informatica/monitor-multimedia</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/666/101219666/n4897203.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5826/6805</field>
+    <field name='count'>158</field>
+    <field name='label'>Cuffie e Auricolari PC</field>
+    <field name='slug'>/informatica/monitor-multimedia/cuffie-e-auricolari-pc</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/944/100933944/n4117264.jpg</field>
+   </nodo>
+  </nodo>
+  <nodo level="2" selected="False">
+   <field name='id'>/5769/5827</field>
+   <field name='count'>1576</field>
+   <field name='label'>Networking &amp; Reti</field>
+   <field name='slug'>/informatica/networking-reti</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/681/100958681/n4236967.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5827/6832</field>
+    <field name='count'>1576</field>
+    <field name='label'>Cavi di Rete</field>
+    <field name='slug'>/informatica/networking-reti/cavi-di-rete</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/873/101219873/n4985814.jpg</field>
+   </nodo>
+  </nodo>
+  <nodo level="2" selected="False">
+   <field name='id'>/5769/5821</field>
+   <field name='count'>557</field>
+   <field name='label'>Accessori &amp; Cavetteria</field>
+   <field name='slug'>/informatica/accessori-cavetteria</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/061/100322061/n4289107.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5769/5821/8914</field>
+    <field name='count'>557</field>
+    <field name='label'>Cavetteria</field>
+    <field name='slug'>/informatica/accessori-cavetteria/cavetteria</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/061/100322061/n4289107.jpg</field>
+    <nodo level="4" selected="False">
+     <field name='id'>/5769/5821/8914/6699</field>
+     <field name='count'>557</field>
+     <field name='label'>Cavi USB</field>
+     <field name='slug'>/informatica/accessori-cavetteria/cavetteria/cavi-usb</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/001/101172001/n4826041.jpg</field>
+    </nodo>
+   </nodo>
+  </nodo>
+ </nodo>
+ <nodo level="1" selected="False">
+  <field name='id'>/5763</field>
+  <field name='count'>961</field>
+  <field name='label'>Audio Video Elettronica</field>
+  <field name='slug'>/audio-video-elettronica</field>
+  <field name='is_store'>False</field>
+  <field name='indexed_google'>True</field>
+  <field name='image_ref'>/666/101219666/n4897203.jpg</field>
+  <nodo level="2" selected="False">
+   <field name='id'>/5763/5788</field>
+   <field name='count'>45</field>
+   <field name='label'>Home Video</field>
+   <field name='slug'>/audio-video-elettronica/home-video</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/035/101128035/n4259669.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5763/5788/6079</field>
+    <field name='count'>45</field>
+    <field name='label'>Staffe e Mobili per TV</field>
+    <field name='slug'>/audio-video-elettronica/home-video/staffe-e-mobili-per-tv</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/511/100775511/n3745362.jpg</field>
+   </nodo>
+  </nodo>
+  <nodo level="2" selected="False">
+   <field name='id'>/5763/5782</field>
+   <field name='count'>25</field>
+   <field name='label'>Audio e MP3</field>
+   <field name='slug'>/audio-video-elettronica/audio-e-mp3</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/695/101027695/n4440302.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5763/5782/5957</field>
+    <field name='count'>25</field>
+    <field name='label'>Accessori iPod</field>
+    <field name='slug'>/audio-video-elettronica/audio-e-mp3/accessori-ipod</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/190/101007190/n4296007.jpg</field>
+    <nodo level="4" selected="False">
+     <field name='id'>/5763/5782/5957/7331</field>
+     <field name='count'>25</field>
+     <field name='label'>Alimentatori e Cavi iPod</field>
+     <field name='slug'>/audio-video-elettronica/audio-e-mp3/accessori-ipod/alimentatori-e-cavi-ipod</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/881/101075881/n4599846.jpg</field>
+    </nodo>
+   </nodo>
+  </nodo>
+  <nodo level="2" selected="False">
+   <field name='id'>/5763/5781</field>
+   <field name='count'>891</field>
+   <field name='label'>Adattatori e cavetteria</field>
+   <field name='slug'>/audio-video-elettronica/adattatori-e-cavetteria</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/325/100969325/n4279348.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5763/5781/5947</field>
+    <field name='count'>567</field>
+    <field name='label'>Cavi Digitali</field>
+    <field name='slug'>/audio-video-elettronica/adattatori-e-cavetteria/cavi-digitali</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/932/100484932/n3103929.jpg</field>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5763/5781/5946</field>
+    <field name='count'>286</field>
+    <field name='label'>Cavi Analogici</field>
+    <field name='slug'>/audio-video-elettronica/adattatori-e-cavetteria/cavi-analogici</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/756/101050756/n4215472.jpg</field>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5763/5781/9091</field>
+    <field name='count'>38</field>
+    <field name='label'>Cavi Antenna</field>
+    <field name='slug'>/audio-video-elettronica/adattatori-e-cavetteria/cavi-antenna</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/295/100232295/n2353053.jpg</field>
+   </nodo>
+  </nodo>
+ </nodo>
+ <nodo level="1" selected="False">
+  <field name='id'>/5762</field>
+  <field name='count'>294</field>
+  <field name='label'>Telefonia &amp; Mobile</field>
+  <field name='slug'>/telefonia-mobile</field>
+  <field name='is_store'>False</field>
+  <field name='indexed_google'>True</field>
+  <field name='image_ref'>/691/101214691/n4967196.jpg</field>
+  <nodo level="2" selected="False">
+   <field name='id'>/5762/9331</field>
+   <field name='count'>294</field>
+   <field name='label'>Cellulari &amp; Smartphone</field>
+   <field name='slug'>/telefonia-mobile/cellulari-e-smartphone</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/691/101214691/n4967196.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5762/9331/10844</field>
+    <field name='count'>40</field>
+    <field name='label'>Accessori iPhone</field>
+    <field name='slug'>/telefonia-mobile/cellulari-e-smartphone/accessori-iphone</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>False</field>
+    <field name='image_ref'>img_nodispo.gif</field>
+    <nodo level="4" selected="False">
+     <field name='id'>/5762/9331/10844/10851</field>
+     <field name='count'>40</field>
+     <field name='label'>Cavi e Adattatori</field>
+     <field name='slug'>/telefonia-mobile/cellulari-e-smartphone/accessori-iphone/cavi-e-adattatori</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>False</field>
+     <field name='image_ref'>img_nodispo.gif</field>
+    </nodo>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5762/9331/10861</field>
+    <field name='count'>186</field>
+    <field name='label'>Accessori Telefonia Compatibili</field>
+    <field name='slug'>/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>img_nodispo.gif</field>
+    <nodo level="4" selected="False">
+     <field name='id'>/5762/9331/10861/10867</field>
+     <field name='count'>80</field>
+     <field name='label'>Caricabatterie</field>
+     <field name='slug'>/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/caricabatterie</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/098/101316098/n4165028.jpg</field>
+    </nodo>
+    <nodo level="4" selected="False">
+     <field name='id'>/5762/9331/10861/10868</field>
+     <field name='count'>106</field>
+     <field name='label'>Cavi e Adattatori</field>
+     <field name='slug'>/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/007/101155007/n4783509.jpg</field>
+    </nodo>
+   </nodo>
+   <nodo level="3" selected="False">
+    <field name='id'>/5762/9331/10882</field>
+    <field name='count'>68</field>
+    <field name='label'>Accessori Telefonia Originali</field>
+    <field name='slug'>/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>False</field>
+    <field name='image_ref'>img_nodispo.gif</field>
+    <nodo level="4" selected="False">
+     <field name='id'>/5762/9331/10882/10896</field>
+     <field name='count'>52</field>
+     <field name='label'>Audio Cavi e Adattatori</field>
+     <field name='slug'>/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali/audio-cavi-e-adattatori</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>False</field>
+     <field name='image_ref'>/712/101297712/5157667.jpg</field>
+    </nodo>
+    <nodo level="4" selected="False">
+     <field name='id'>/5762/9331/10882/10886</field>
+     <field name='count'>16</field>
+     <field name='label'>Caricabatterie</field>
+     <field name='slug'>/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali/caricabatterie</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>False</field>
+     <field name='image_ref'>/253/101290253/5157437.jpg</field>
+    </nodo>
+   </nodo>
+  </nodo>
+ </nodo>
+ <nodo level="1" selected="False">
+  <field name='id'>/5765</field>
+  <field name='count'>73</field>
+  <field name='label'>Casa &amp; Cucina</field>
+  <field name='slug'>/casa-cucina</field>
+  <field name='is_store'>False</field>
+  <field name='indexed_google'>True</field>
+  <field name='image_ref'>/614/100616614/n3397784.jpg</field>
+  <nodo level="2" selected="False">
+   <field name='id'>/5765/5801</field>
+   <field name='count'>73</field>
+   <field name='label'>Sicurezza &amp; Automazione casa</field>
+   <field name='slug'>/casa-cucina/sicurezza-automazione-casa</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/998/100404998/n2442034.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5765/5801/6257</field>
+    <field name='count'>73</field>
+    <field name='label'>Videosorveglianza</field>
+    <field name='slug'>/casa-cucina/sicurezza-automazione-casa/videosorveglianza</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>True</field>
+    <field name='image_ref'>/904/100409904/n2956620.jpg</field>
+    <nodo level="4" selected="False">
+     <field name='id'>/5765/5801/6257/10517</field>
+     <field name='count'>15</field>
+     <field name='label'>Kit di Videosorveglianza</field>
+     <field name='slug'>/casa-cucina/sicurezza-automazione-casa/videosorveglianza/kit-di-videosorveglianza</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/904/100409904/n2956620.jpg</field>
+    </nodo>
+    <nodo level="4" selected="False">
+     <field name='id'>/5765/5801/6257/10518</field>
+     <field name='count'>18</field>
+     <field name='label'>Telecamere</field>
+     <field name='slug'>/casa-cucina/sicurezza-automazione-casa/videosorveglianza/telecamere</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/448/100975448/n4124418.jpg</field>
+    </nodo>
+    <nodo level="4" selected="False">
+     <field name='id'>/5765/5801/6257/10519</field>
+     <field name='count'>32</field>
+     <field name='label'>Accessori per Videosorveglianza</field>
+     <field name='slug'>/casa-cucina/sicurezza-automazione-casa/videosorveglianza/accessori-per-videosorveglianza</field>
+     <field name='is_store'>False</field>
+     <field name='indexed_google'>True</field>
+     <field name='image_ref'>/531/101215531/n4973180.jpg</field>
+    </nodo>
+   </nodo>
+  </nodo>
+ </nodo>
+ <nodo level="1" selected="False">
+  <field name='id'>/5768</field>
+  <field name='count'>5</field>
+  <field name='label'>Brico Giardino Animali</field>
+  <field name='slug'>/brico-giardino-animali</field>
+  <field name='is_store'>False</field>
+  <field name='indexed_google'>True</field>
+  <field name='image_ref'>/909/100937909/n4141803.jpg</field>
+  <nodo level="2" selected="False">
+   <field name='id'>/5768/5819</field>
+   <field name='count'>5</field>
+   <field name='label'>Materiale Elettrico</field>
+   <field name='slug'>/brico-giardino-animali/materiale-elettrico</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/478/100007478/n2081853.jpg</field>
+   <nodo level="3" selected="False">
+    <field name='id'>/5768/5819/10817</field>
+    <field name='count'>5</field>
+    <field name='label'>Raccoglicavi e Canaline</field>
+    <field name='slug'>/brico-giardino-animali/materiale-elettrico/raccoglicavi-e-canaline</field>
+    <field name='is_store'>False</field>
+    <field name='indexed_google'>False</field>
+    <field name='image_ref'>/488/100976488/n4121415.jpg</field>
+   </nodo>
+  </nodo>
+ </nodo>
+</tree>
+
+<facet type="generico" name="FiltroPromo" label="Promozioni" mode="AND" selected="False">
+
+	<field  id="false">4181</field>
+	<field  id="true">528</field>
+</facet>
+<facet type="generico" name="FiltroNovita" label="Novità" mode="AND" selected="False">
+
+	<field  id="false">4639</field>
+	<field  id="true">70</field>
+</facet>
+<facet type="generico" name="store_slug" label="Store" mode="AND" selected="False">
+
+</facet>
+<facet type="generico" name="FiltroDispo" label="Disponibili" mode="AND" selected="False">
+
+	<field  id="false">355</field>
+	<field  id="true">4354</field>
+</facet>
+<facet type="generico" name="FiltroFreeShipping" label="Spedizione Gratuita" mode="AND" selected="False">
+
+	<field  id="false">4709</field>
+</facet>
+<facet type="generico" name="FastShipping" label="Pronta Consegna" mode="AND" selected="False">
+
+	<field  id="0">3827</field>
+	<field  id="1">882</field>
+</facet>
+<facet type="generico" name="Manufacturer" label="Brand" mode="OR" selected="False">
+
+	<field descrizione="3M" immagine="img_nodispo.gif" id="3M">1</field>
+	<field  id="A.C. RYAN">3</field>
+	<field descrizione="AC RYAN" immagine="img_nodispo.gif" id="AC RYAN">1</field>
+	<field descrizione="ACC. ERICSSON" immagine="img_nodispo.gif" id="ACC. ERICSSON">3</field>
+	<field descrizione="AIINO" immagine="img_nodispo.gif" id="AIINO">8</field>
+	<field descrizione="AKASA" immagine="img_nodispo.gif" id="AKASA">15</field>
+	<field descrizione="ALCATEL" immagine="img_nodispo.gif" id="ALCATEL">1</field>
+	<field descrizione="ANSMANN" immagine="img_nodispo.gif" id="ANSMANN">1</field>
+	<field descrizione="APPLE" immagine="img_nodispo.gif" id="APPLE">6</field>
+	<field descrizione="ARCTIC COOLING" immagine="img_nodispo.gif" id="ARCTIC COOLING">2</field>
+	<field descrizione="ASUS" immagine="img_nodispo.gif" id="ASUS">14</field>
+	<field descrizione="ATLANTIS LAND" immagine="img_nodispo.gif" id="ATLANTIS LAND">47</field>
+	<field descrizione="AVIDSEN" immagine="img_nodispo.gif" id="AVIDSEN">11</field>
+	<field descrizione="AVOCENT" immagine="img_nodispo.gif" id="AVOCENT">1</field>
+	<field  id="B-SPEECH">2</field>
+	<field  id="BARKAN">2</field>
+	<field descrizione="BELKIN" immagine="img_nodispo.gif" id="BELKIN">46</field>
+	<field descrizione="BLACKBERRY" immagine="img_nodispo.gif" id="BLACKBERRY">11</field>
+	<field descrizione="BTICINO" immagine="img_nodispo.gif" id="BTICINO">1</field>
+	<field descrizione="CABSTONE" immagine="img_nodispo.gif" id="CABSTONE">2</field>
+	<field descrizione="CELLULAR LINE" immagine="img_nodispo.gif" id="CELLULAR LINE">28</field>
+	<field descrizione="CELLY" immagine="img_nodispo.gif" id="CELLY">2</field>
+	<field descrizione="CLICKTRONIC" immagine="img_nodispo.gif" id="CLICKTRONIC">28</field>
+	<field  id="COBY">1</field>
+	<field descrizione="CONCEPTRONIC" immagine="img_nodispo.gif" id="CONCEPTRONIC">1</field>
+	<field descrizione="COOLERMASTER" immagine="img_nodispo.gif" id="COOLERMASTER">11</field>
+	<field descrizione="CORSAIR" immagine="img_nodispo.gif" id="CORSAIR">3</field>
+	<field descrizione="DELOCK" immagine="img_nodispo.gif" id="DELOCK">8</field>
+	<field descrizione="DIGITUS" immagine="img_nodispo.gif" id="DIGITUS">527</field>
+	<field descrizione="DISNEY" immagine="img_nodispo.gif" id="DISNEY">1</field>
+	<field descrizione="EASYTECK" immagine="img_nodispo.gif" id="EASYTECK">4</field>
+	<field descrizione="EDIMAX" immagine="img_nodispo.gif" id="EDIMAX">1</field>
+	<field descrizione="EMACHINE" immagine="img_nodispo.gif" id="EMACHINE">55</field>
+	<field descrizione="EMINENT" immagine="img_nodispo.gif" id="EMINENT">39</field>
+	<field descrizione="EWENT" immagine="img_nodispo.gif" id="EWENT">1</field>
+	<field descrizione="FANTEC" immagine="img_nodispo.gif" id="FANTEC">3</field>
+	<field descrizione="FRACARRO" immagine="img_nodispo.gif" id="FRACARRO">1</field>
+	<field  id="G &amp; BL">3</field>
+	<field  id="GECKO">11</field>
+	<field descrizione="GENIUS" immagine="img_nodispo.gif" id="GENIUS">14</field>
+	<field descrizione="GOOBAY" immagine="img_nodispo.gif" id="GOOBAY">27</field>
+	<field descrizione="GRIFFIN TECHNOLOGY" immagine="img_nodispo.gif" id="GRIFFIN TECHNOLOGY">5</field>
+	<field descrizione="HAMA" immagine="img_nodispo.gif" id="HAMA">116</field>
+	<field descrizione="HAMLET" immagine="img_nodispo.gif" id="HAMLET">11</field>
+	<field descrizione="HI-FUN" immagine="img_nodispo.gif" id="HI-FUN">6</field>
+	<field descrizione="HP" immagine="img_nodispo.gif" id="HP">4</field>
+	<field  id="HQ">11</field>
+	<field descrizione="HTC" immagine="img_nodispo.gif" id="HTC">6</field>
+	<field descrizione="ILUV CREATIVE TECHNOLOGY" immagine="img_nodispo.gif" id="ILUV CREATIVE TECHNOLOGY">1</field>
+	<field descrizione="INTELLINET" immagine="img_nodispo.gif" id="INTELLINET">595</field>
+	<field descrizione="ITEK" immagine="img_nodispo.gif" id="ITEK">1</field>
+	<field descrizione="JEIKO" immagine="img_nodispo.gif" id="JEIKO">2</field>
+	<field descrizione="JOYSTYLE" immagine="img_nodispo.gif" id="JOYSTYLE">3</field>
+	<field descrizione="KARMA" immagine="img_nodispo.gif" id="KARMA">6</field>
+	<field descrizione="KENSINGTON" immagine="img_nodispo.gif" id="KENSINGTON">11</field>
+	<field descrizione="KONIG" immagine="img_nodispo.gif" id="KONIG">19</field>
+	<field descrizione="KRAUN" immagine="img_nodispo.gif" id="KRAUN">5</field>
+	<field descrizione="LENOVO" immagine="img_nodispo.gif" id="LENOVO">3</field>
+	<field descrizione="LG" immagine="img_nodispo.gif" id="LG">7</field>
+	<field  id="LIAN  LI">2</field>
+	<field descrizione="LINDY" immagine="img_nodispo.gif" id="LINDY">1216</field>
+	<field descrizione="LINK" immagine="img_nodispo.gif" id="LINK">29</field>
+	<field  id="LOGILINK">14</field>
+	<field descrizione="LOGITECH" immagine="img_nodispo.gif" id="LOGITECH">51</field>
+	<field  id="LTK">2</field>
+	<field  id="MAGITEK">1</field>
+	<field descrizione="MANHATTAN" immagine="img_nodispo.gif" id="MANHATTAN">318</field>
+	<field descrizione="MEDI@COM" immagine="img_nodispo.gif" id="MEDI@COM">18</field>
+	<field descrizione="MELICONI" immagine="img_nodispo.gif" id="MELICONI">16</field>
+	<field descrizione="METRONIC ITALIA SRL" immagine="img_nodispo.gif" id="METRONIC ITALIA SRL">3</field>
+	<field descrizione="MICROSOFT" immagine="img_nodispo.gif" id="MICROSOFT">11</field>
+	<field descrizione="MIIA" immagine="img_nodispo.gif" id="MIIA">13</field>
+	<field descrizione="MONSTER CABLE" immagine="img_nodispo.gif" id="MONSTER CABLE">2</field>
+	<field descrizione="MOSHI" immagine="img_nodispo.gif" id="MOSHI">4</field>
+	<field descrizione="MOTOROLA" immagine="img_nodispo.gif" id="MOTOROLA">4</field>
+	<field descrizione="MOXA" immagine="img_nodispo.gif" id="MOXA">10</field>
+	<field descrizione="MUVIT" immagine="img_nodispo.gif" id="MUVIT">4</field>
+	<field descrizione="NGM" immagine="img_nodispo.gif" id="NGM">5</field>
+	<field descrizione="NGS" immagine="img_nodispo.gif" id="NGS">17</field>
+	<field descrizione="NOKIA" immagine="img_nodispo.gif" id="NOKIA">24</field>
+	<field descrizione="NOX" immagine="img_nodispo.gif" id="NOX">1</field>
+	<field descrizione="PALIT" immagine="img_nodispo.gif" id="PALIT">2</field>
+	<field descrizione="PLANTRONICS" immagine="img_nodispo.gif" id="PLANTRONICS">3</field>
+	<field  id="PROEL">60</field>
+	<field descrizione="PURO" immagine="img_nodispo.gif" id="PURO">46</field>
+	<field  id="RAPOO">5</field>
+	<field descrizione="RAZER" immagine="img_nodispo.gif" id="RAZER">20</field>
+	<field descrizione="ROCCAT" immagine="img_nodispo.gif" id="ROCCAT">3</field>
+	<field  id="RUNTASTIC">1</field>
+	<field descrizione="SAITEK" immagine="img_nodispo.gif" id="SAITEK">1</field>
+	<field descrizione="SAMSUNG" immagine="img_nodispo.gif" id="SAMSUNG">42</field>
+	<field descrizione="SBS" immagine="img_nodispo.gif" id="SBS">70</field>
+	<field descrizione="SHARKOON" immagine="img_nodispo.gif" id="SHARKOON">6</field>
+	<field descrizione="SHINTEK" immagine="img_nodispo.gif" id="SHINTEK">2</field>
+	<field descrizione="SHURE" immagine="img_nodispo.gif" id="SHURE">1</field>
+	<field descrizione="SITECOM" immagine="img_nodispo.gif" id="SITECOM">16</field>
+	<field descrizione="SONY" immagine="img_nodispo.gif" id="SONY">12</field>
+	<field descrizione="SPEEDLINK" immagine="img_nodispo.gif" id="SPEEDLINK">5</field>
+	<field descrizione="STARTECH.COM" immagine="img_nodispo.gif" id="STARTECH.COM">537</field>
+	<field descrizione="STEELSERIES" immagine="img_nodispo.gif" id="STEELSERIES">17</field>
+</facet>
+<facet type="attributi" id="141" name="Sistema" sort="0" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="Mono"  readonly="False">2</field>
+	<field name="Stereo"  readonly="False">155</field>
+</facet>
+<facet type="attributi" id="16" name="Dimensione Schermo" sort="0" mode="OR" um=" pollici" selected="False"  gold='True' >
+
+	<field name="5.5"  readonly="False">2</field>
+</facet>
+<facet type="attributi" id="15" name="Tipologia" sort="0" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Accessori Allarmi"  readonly="False">8</field>
+	<field name="Accessori Videosorveglianza"  readonly="False">32</field>
+	<field name="Auricolare"  readonly="False">1</field>
+	<field name="Auricolari"  readonly="False">12</field>
+	<field name="Auricolari Bluetooth"  readonly="False">2</field>
+	<field name="Batteria"  readonly="False">1</field>
+	<field name="Caricabatterie"  readonly="False">80</field>
+	<field name="Cavi Dati"  readonly="False">42</field>
+	<field name="Cavi dati"  readonly="False">1</field>
+	<field name="Cavi e Adattatori"  readonly="False">112</field>
+	<field name="Cuffie"  readonly="False">137</field>
+	<field name="Cuffie Bluetooth"  readonly="False">1</field>
+	<field name="Kit Videosorveglianza"  readonly="False">15</field>
+	<field name="Telecamera"  readonly="False">18</field>
+	<field name="Vari"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="675" name="Tipo Prodotto" sort="0" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="Raccoglicavo"  readonly="False">5</field>
+</facet>
+<facet type="attributi" id="272" name="Compatibilità" sort="0" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Blackberry 8220"  readonly="False">1</field>
+	<field name="Blackberry 9800"  readonly="False">1</field>
+	<field name="Galaxy S"  readonly="False">1</field>
+	<field name="Galaxy S2"  readonly="False">2</field>
+	<field name="Galaxy S2 / S3 / Note"  readonly="False">1</field>
+	<field name="Galaxy S4"  readonly="False">2</field>
+	<field name="Galaxy Tab"  readonly="False">5</field>
+	<field name="Galaxy tab"  readonly="False">3</field>
+	<field name="LG KG800"  readonly="False">1</field>
+	<field name="LG L5 / L7 / L9"  readonly="False">1</field>
+	<field name="N95 / N96"  readonly="False">1</field>
+	<field name="NGM Black Angel"  readonly="False">1</field>
+	<field name="NGM Krystal/ Lilith"  readonly="False">1</field>
+	<field name="NGM Premier"  readonly="False">1</field>
+	<field name="Nokia"  readonly="False">2</field>
+	<field name="Nokia 1100"  readonly="False">1</field>
+	<field name="Nokia 5310"  readonly="False">1</field>
+	<field name="Nokia 6100"  readonly="False">1</field>
+	<field name="Nokia Lumia"  readonly="False">1</field>
+	<field name="Nokia N70/N90/Serie 62"  readonly="False">1</field>
+	<field name="Samsung M600"  readonly="False">1</field>
+	<field name="Serie E / Serie N"  readonly="False">2</field>
+	<field name="Solo iPhone 4"  readonly="False">1</field>
+	<field name="Sony K750"  readonly="False">1</field>
+	<field name="Universale"  readonly="False">96</field>
+	<field name="Universale USB"  readonly="False">2</field>
+	<field name="iPhone"  readonly="False">6</field>
+	<field name="iPhone 5"  readonly="False">1</field>
+	<field name="iPhone/ iPad/ iPod Touch"  readonly="False">10</field>
+	<field name="iPhone/iPad"  readonly="False">2</field>
+	<field name="iPhone/iPod"  readonly="False">3</field>
+	<field name="iPhone/iPod/iPad"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="114" name="Produttore Scheda" sort="0" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="NVIDIA"  readonly="False">5</field>
+</facet>
+<facet type="attributi" id="497" name="Tipo di Cavo" sort="0" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Adattatore"  readonly="False">23</field>
+	<field name="Adattatore Antenna"  readonly="False">2</field>
+	<field name="Antenna"  readonly="False">2</field>
+	<field name="Antenna TV"  readonly="False">25</field>
+	<field name="Assemblaggio PC"  readonly="False">251</field>
+	<field name="Audio"  readonly="False">86</field>
+	<field name="Cavo Alimentazione"  readonly="False">1</field>
+	<field name="Cavo Jack"  readonly="False">2</field>
+	<field name="Cavo Passivo"  readonly="False">1</field>
+	<field name="Cavo Usb"  readonly="False">370</field>
+	<field name="Distributore Antenna"  readonly="False">3</field>
+	<field name="HDMI"  readonly="False">41</field>
+	<field name="Prolunga"  readonly="False">34</field>
+	<field name="Prolunga Usb"  readonly="False">49</field>
+	<field name="RCA"  readonly="False">6</field>
+	<field name="S-VGA"  readonly="False">3</field>
+	<field name="S-VHS"  readonly="False">3</field>
+	<field name="Scart"  readonly="False">3</field>
+	<field name="VGA"  readonly="False">6</field>
+	<field name="Video"  readonly="False">962</field>
+</facet>
+<facet type="attributi" id="430" name="Tipologia supporto" sort="0" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Accessori nascondifilo"  readonly="False">6</field>
+	<field name="Stile"  readonly="False">15</field>
+	<field name="Supporti a muro"  readonly="False">12</field>
+</facet>
+<facet type="attributi" id="711" name="Tipo Accessorio" sort="1" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="Alimentatore"  readonly="False">1</field>
+	<field name="Cavo"  readonly="False">22</field>
+	<field name="DVR Recorder"  readonly="False">6</field>
+	<field name="NetBalun"  readonly="False">2</field>
+	<field name="Protezione"  readonly="False">2</field>
+	<field name="Raccordi e Connettori"  readonly="False">2</field>
+	<field name="Radiocomando"  readonly="False">1</field>
+	<field name="Rilevatore di Consumi"  readonly="False">1</field>
+	<field name="Rilevatore di Fumo"  readonly="False">1</field>
+	<field name="Sensore di Apertura"  readonly="False">1</field>
+	<field name="Sirena"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="842" name="Range TV Supportati" sort="1" mode="OR" um=" Pollici" selected="False"  gold='False' >
+
+	<field name="14-23"  readonly="False">3</field>
+	<field name="17-26"  readonly="False">1</field>
+	<field name="19-26"  readonly="False">1</field>
+	<field name="23-37"  readonly="False">1</field>
+	<field name="23-55"  readonly="False">1</field>
+	<field name="26-32"  readonly="False">5</field>
+	<field name="26-37"  readonly="False">1</field>
+	<field name="26-40"  readonly="False">2</field>
+	<field name="32-55"  readonly="False">1</field>
+	<field name="32-60"  readonly="False">2</field>
+	<field name="37-50"  readonly="False">2</field>
+	<field name="40-50"  readonly="False">3</field>
+	<field name="40-65"  readonly="False">1</field>
+	<field name="46-60"  readonly="False">1</field>
+	<field name="50-63"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="109" name="Tipo" sort="1" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Cavi"  readonly="False">7</field>
+	<field name="Dissipatore"  readonly="False">3</field>
+	<field name="Luce"  readonly="False">1</field>
+	<field name="Mouse"  readonly="False">142</field>
+	<field name="Stand"  readonly="False">8</field>
+</facet>
+<facet type="attributi" id="239" name="Serie scheda" sort="2" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="GeForce GTX 770"  readonly="False">5</field>
+</facet>
+<facet type="attributi" id="838" name="Standard Vesa Minimo" sort="2" mode="OR" um=" mm" selected="False"  gold='False' >
+
+	<field name="100x100"  readonly="False">1</field>
+	<field name="75x75"  readonly="False">10</field>
+</facet>
+<facet type="attributi" id="112" name="Puntamento" sort="2" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Ottico"  readonly="False">8</field>
+</facet>
+<facet type="attributi" id="826" name="Accessori Cuffia" sort="2" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="Microfono"  readonly="False">109</field>
+</facet>
+<facet type="attributi" id="608" name="Numero Tasti" sort="2" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="105"  readonly="False">8</field>
+	<field name="104"  readonly="False">3</field>
+</facet>
+<facet type="attributi" id="1000498" name="Lunghezza Cavo" sort="2" mode="OR" um=" Metri" selected="False"  gold='True' >
+
+	<field name="0.1"  readonly="False">1</field>
+	<field name="0.15"  readonly="False">1</field>
+	<field name="0.2"  readonly="False">7</field>
+	<field name="0.25"  readonly="False">2</field>
+	<field name="0.3"  readonly="False">4</field>
+	<field name="0.35"  readonly="False">1</field>
+	<field name="0.5"  readonly="False">50</field>
+	<field name="0.7"  readonly="False">3</field>
+	<field name="0.75"  readonly="False">1</field>
+	<field name="0.8"  readonly="False">1</field>
+	<field name="0.80"  readonly="False">1</field>
+	<field name="0.9"  readonly="False">6</field>
+	<field name="1"  readonly="False">129</field>
+	<field name="1,5"  readonly="False">1</field>
+	<field name="1,8"  readonly="False">4</field>
+	<field name="1.0"  readonly="False">1</field>
+	<field name="1.2"  readonly="False">6</field>
+	<field name="1.3"  readonly="False">1</field>
+	<field name="1.5"  readonly="False">53</field>
+	<field name="1.8"  readonly="False">103</field>
+	<field name="1.9"  readonly="False">1</field>
+	<field name="10"  readonly="False">79</field>
+	<field name="100"  readonly="False">3</field>
+	<field name="11"  readonly="False">1</field>
+	<field name="15"  readonly="False">45</field>
+	<field name="2"  readonly="False">172</field>
+	<field name="2.5"  readonly="False">2</field>
+	<field name="20"  readonly="False">43</field>
+	<field name="25"  readonly="False">7</field>
+	<field name="3"  readonly="False">216</field>
+	<field name="3.4"  readonly="False">1</field>
+	<field name="3.5"  readonly="False">2</field>
+	<field name="30"  readonly="False">13</field>
+	<field name="4"  readonly="False">2</field>
+	<field name="4.5"  readonly="False">6</field>
+	<field name="4.8"  readonly="False">1</field>
+	<field name="40"  readonly="False">3</field>
+	<field name="45"  readonly="False">1</field>
+	<field name="5"  readonly="False">152</field>
+	<field name="50"  readonly="False">5</field>
+	<field name="6"  readonly="False">2</field>
+	<field name="60"  readonly="False">2</field>
+	<field name="7"  readonly="False">1</field>
+	<field name="7.5"  readonly="False">16</field>
+	<field name="75"  readonly="False">1</field>
+	<field name="8"  readonly="False">2</field>
+	<field name="9"  readonly="False">1</field>
+	<field name="91"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="184" name="Alimentazione" sort="3" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Batterie Ricaricabili"  readonly="False">1</field>
+	<field name="Elettrica"  readonly="False">27</field>
+	<field name="PoE"  readonly="False">3</field>
+</facet>
+<facet type="attributi" id="115" name="Tipo di slot" sort="3" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="PCI-Express"  readonly="False">5</field>
+</facet>
+<facet type="attributi" id="693" name="Connettori" sort="3" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="1F/2F"  readonly="False">1</field>
+	<field name="F"  readonly="False">1</field>
+	<field name="F/F"  readonly="False">1</field>
+	<field name="F/M"  readonly="False">6</field>
+	<field name="M"  readonly="False">1</field>
+	<field name="M/F"  readonly="False">18</field>
+	<field name="M/F con Adatt. M/M"  readonly="False">9</field>
+	<field name="M/M"  readonly="False">99</field>
+</facet>
+<facet type="attributi" id="841" name="Standard Vesa Massimo" sort="3" mode="OR" um=" mm" selected="False"  gold='False' >
+
+	<field name="100x100"  readonly="False">3</field>
+	<field name="200x100"  readonly="False">1</field>
+	<field name="200x200"  readonly="False">6</field>
+	<field name="400x300"  readonly="False">1</field>
+	<field name="400x400"  readonly="False">5</field>
+	<field name="600x400"  readonly="False">4</field>
+	<field name="800x400"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="848" name="Numero Telecamere" sort="3" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="2"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="856" name="Brand Compatibile" sort="4" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Apple"  readonly="False">43</field>
+	<field name="BlackBerry"  readonly="False">3</field>
+	<field name="Blackberry"  readonly="False">3</field>
+	<field name="Gadget"  readonly="False">1</field>
+	<field name="HTC"  readonly="False">3</field>
+	<field name="LG"  readonly="False">3</field>
+	<field name="Miia"  readonly="False">9</field>
+	<field name="NGM"  readonly="False">6</field>
+	<field name="Nokia"  readonly="False">26</field>
+	<field name="Samsung"  readonly="False">26</field>
+	<field name="Sony"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="69" name="Colore" sort="4" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Arancione"  readonly="False">1</field>
+	<field name="Argento"  readonly="False">14</field>
+	<field name="Beige/Rosso"  readonly="False">1</field>
+	<field name="Bianco"  readonly="False">45</field>
+	<field name="Bianco / Nero"  readonly="False">3</field>
+	<field name="Bianco / Rosa"  readonly="False">1</field>
+	<field name="Bianco Nero"  readonly="False">1</field>
+	<field name="Bianco/Oro"  readonly="False">1</field>
+	<field name="Blu"  readonly="False">14</field>
+	<field name="Cioccolato"  readonly="False">1</field>
+	<field name="Giallo"  readonly="False">1</field>
+	<field name="Grigio"  readonly="False">9</field>
+	<field name="Nero"  readonly="False">256</field>
+	<field name="Nero Rosa"  readonly="False">1</field>
+	<field name="Nero/Argento"  readonly="False">1</field>
+	<field name="Nero/Giallo"  readonly="False">2</field>
+	<field name="Rosa"  readonly="False">8</field>
+	<field name="Rosso"  readonly="False">11</field>
+	<field name="Rosso/Oro"  readonly="False">1</field>
+	<field name="Verde"  readonly="False">8</field>
+	<field name="Viola"  readonly="False">4</field>
+	<field name="bianco - azzurro"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="837" name="Peso Massimo Supportato" sort="4" mode="OR" um=" Kg" selected="False"  gold='False' >
+
+	<field name="200"  readonly="False">2</field>
+	<field name="80"  readonly="False">2</field>
+	<field name="60"  readonly="False">2</field>
+	<field name="45"  readonly="False">4</field>
+	<field name="30"  readonly="False">3</field>
+	<field name="25"  readonly="False">1</field>
+	<field name="20"  readonly="False">10</field>
+	<field name="15"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="275" name="Qualità" sort="4" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Hi End"  readonly="False">93</field>
+</facet>
+<facet type="attributi" id="273" name="Tipo di batteria" sort="4" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Alimentatore NGM"  readonly="False">1</field>
+	<field name="Alimentatore Nokia"  readonly="False">1</field>
+	<field name="Batteria Blackberry"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="139" name="Dotazione RAM" sort="4" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="4GB"  readonly="False">1</field>
+	<field name="2GB"  readonly="False">4</field>
+</facet>
+<facet type="attributi" id="607" name="Layout" sort="4" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="QWERTY"  readonly="False">4</field>
+</facet>
+<facet type="attributi" id="530" name="Utilizzo" sort="4" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Gaming"  readonly="False">46</field>
+	<field name="Intrattenimento"  readonly="False">125</field>
+	<field name="Per Esterno"  readonly="False">3</field>
+	<field name="Per Interno"  readonly="False">1</field>
+	<field name="Per Interno/Esterno"  readonly="False">3</field>
+</facet>
+<facet type="attributi" id="149" name="Tipologia Scheda" sort="5" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Gaming"  readonly="False">5</field>
+</facet>
+<facet type="attributi" id="858" name="Connettore IN" sort="5" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="15-Pin"  readonly="False">2</field>
+	<field name="2 x USB A 2.0"  readonly="False">4</field>
+	<field name="2 x USB A 3.0"  readonly="False">1</field>
+	<field name="2-pin"  readonly="False">1</field>
+	<field name="20-Pin"  readonly="False">4</field>
+	<field name="24-Pin"  readonly="False">2</field>
+	<field name="2xRCA"  readonly="False">17</field>
+	<field name="3-Pin"  readonly="False">2</field>
+	<field name="3xRCA"  readonly="False">21</field>
+	<field name="4 Poli"  readonly="False">1</field>
+	<field name="4-Pin"  readonly="False">5</field>
+	<field name="4-pin"  readonly="False">1</field>
+	<field name='5.25"'  readonly="False">2</field>
+	<field name="5.25'"  readonly="False">1</field>
+	<field name="8-Pin"  readonly="False">1</field>
+	<field name="ATX"  readonly="False">5</field>
+	<field name="ATX 24-pin"  readonly="False">3</field>
+	<field name="AWG"  readonly="False">1</field>
+	<field name="BNC"  readonly="False">1</field>
+	<field name="BNC (RF Coassiale)"  readonly="False">27</field>
+	<field name="Coax"  readonly="False">4</field>
+	<field name="DVI"  readonly="False">79</field>
+	<field name="DVI-A"  readonly="False">3</field>
+	<field name="DVI-D"  readonly="False">106</field>
+	<field name="DVI-I"  readonly="False">13</field>
+	<field name="DisplayPort"  readonly="False">41</field>
+	<field name="E-SATA"  readonly="False">2</field>
+	<field name="F-Type"  readonly="False">1</field>
+	<field name="HD DSUB"  readonly="False">1</field>
+	<field name="HDMI"  readonly="False">410</field>
+	<field name="HDTV VGA"  readonly="False">1</field>
+	<field name="IDC"  readonly="False">22</field>
+	<field name="IEC"  readonly="False">18</field>
+	<field name="Jack"  readonly="False">41</field>
+	<field name="MDR-20"  readonly="False">1</field>
+	<field name="Micro HDMI"  readonly="False">12</field>
+	<field name="Micro USB"  readonly="False">3</field>
+	<field name="Micro USB A 2.0"  readonly="False">38</field>
+	<field name="Micro USB B 2.0"  readonly="False">4</field>
+	<field name="Mini DVI"  readonly="False">1</field>
+	<field name="Mini Din 4 pin"  readonly="False">1</field>
+	<field name="Mini Display Port"  readonly="False">11</field>
+	<field name="Mini DisplayPort"  readonly="False">29</field>
+	<field name="Mini HDMI"  readonly="False">17</field>
+	<field name="Molex"  readonly="False">8</field>
+	<field name="OTG"  readonly="False">1</field>
+	<field name="Ottico"  readonly="False">1</field>
+	<field name="PS2"  readonly="False">1</field>
+	<field name="RCA"  readonly="False">17</field>
+	<field name="RJ-45"  readonly="False">2</field>
+	<field name="S-VGA"  readonly="False">92</field>
+	<field name="S-VHS"  readonly="False">6</field>
+	<field name="SAS"  readonly="False">8</field>
+	<field name="SATA"  readonly="False">96</field>
+	<field name="SATA III"  readonly="False">5</field>
+	<field name="SATA24"  readonly="False">1</field>
+	<field name="SFF"  readonly="False">3</field>
+	<field name="Sata"  readonly="False">1</field>
+	<field name="Scart"  readonly="False">18</field>
+	<field name="Schuko"  readonly="False">17</field>
+	<field name="Thunderbolt"  readonly="False">4</field>
+	<field name="Toslink"  readonly="False">18</field>
+	<field name="USB"  readonly="False">13</field>
+	<field name="USB A 2.0"  readonly="False">288</field>
+	<field name="USB A 3.0"  readonly="False">112</field>
+	<field name="USB B 2.0"  readonly="False">6</field>
+	<field name="USB-A"  readonly="False">1</field>
+	<field name="VGA"  readonly="False">154</field>
+	<field name="XGA"  readonly="False">3</field>
+	<field name="Xeon"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="840" name="Angolo di Rotazione Orizzontale" sort="5" mode="OR" um=" °" selected="False"  gold='False' >
+
+	<field name="180"  readonly="False">1</field>
+	<field name="90"  readonly="False">6</field>
+	<field name="80"  readonly="False">2</field>
+	<field name="45"  readonly="False">4</field>
+</facet>
+<facet type="attributi" id="664" name="Collegamento" sort="5" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="IP"  readonly="False">15</field>
+	<field name="Infrarossi"  readonly="False">1</field>
+	<field name="Wired"  readonly="False">22</field>
+	<field name="Wireless"  readonly="False">2</field>
+</facet>
+<facet type="attributi" id="839" name="Angolo di Rotazione Verticale" sort="6" mode="OR" um=" °" selected="False"  gold='False' >
+
+	<field name="30"  readonly="False">1</field>
+	<field name="25"  readonly="False">1</field>
+	<field name="20"  readonly="False">11</field>
+</facet>
+<facet type="attributi" id="860" name="Genere IN" sort="6" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="Femmina"  readonly="False">109</field>
+	<field name="Maschio"  readonly="False">1719</field>
+</facet>
+<facet type="attributi" id="717" name="Movimento Supporto" sort="7" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="Double Rotation"  readonly="False">6</field>
+	<field name="Double Rotation Slim"  readonly="False">2</field>
+	<field name="Double Turn"  readonly="False">1</field>
+	<field name="Rotation"  readonly="False">7</field>
+</facet>
+<facet type="attributi" id="859" name="Connettore OUT" sort="7" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="15-Pin"  readonly="False">2</field>
+	<field name="2 x HDMI"  readonly="False">2</field>
+	<field name="2 x USB A 2.0"  readonly="False">1</field>
+	<field name="2 x USB A 3.0"  readonly="False">1</field>
+	<field name="2 x4 Poli"  readonly="False">1</field>
+	<field name="2-pin"  readonly="False">1</field>
+	<field name="20-Pin"  readonly="False">3</field>
+	<field name="24-Pin"  readonly="False">4</field>
+	<field name="2xRCA"  readonly="False">18</field>
+	<field name="2xVGA"  readonly="False">3</field>
+	<field name="3-Pin"  readonly="False">3</field>
+	<field name="3.5'"  readonly="False">1</field>
+	<field name="36-P"  readonly="False">1</field>
+	<field name="3xRCA"  readonly="False">23</field>
+	<field name="4 x USB A 2.0"  readonly="False">3</field>
+	<field name="4-Pin"  readonly="False">3</field>
+	<field name="5-Pin"  readonly="False">1</field>
+	<field name="5.25"  readonly="False">1</field>
+	<field name='5.25"'  readonly="False">2</field>
+	<field name="5xBNC"  readonly="False">1</field>
+	<field name="6-Pin"  readonly="False">1</field>
+	<field name="6-pin"  readonly="False">1</field>
+	<field name="8-Pin"  readonly="False">2</field>
+	<field name="AM"  readonly="False">1</field>
+	<field name="ATX"  readonly="False">6</field>
+	<field name="AWG"  readonly="False">1</field>
+	<field name="BNC"  readonly="False">3</field>
+	<field name="BNC (RF Coassiale)"  readonly="False">27</field>
+	<field name="Coax"  readonly="False">4</field>
+	<field name="Component"  readonly="False">1</field>
+	<field name="DMS"  readonly="False">2</field>
+	<field name="DVI"  readonly="False">57</field>
+	<field name="DVI-D"  readonly="False">145</field>
+	<field name="DVI-I"  readonly="False">9</field>
+	<field name="Display Port"  readonly="False">6</field>
+	<field name="DisplayPort"  readonly="False">25</field>
+	<field name="E-SATA"  readonly="False">2</field>
+	<field name="EATX 20-pin"  readonly="False">2</field>
+	<field name="ExpressCard"  readonly="False">1</field>
+	<field name="F-Type"  readonly="False">1</field>
+	<field name="HD DSUB"  readonly="False">1</field>
+	<field name="HDCP"  readonly="False">1</field>
+	<field name="HDMI"  readonly="False">325</field>
+	<field name="IDC"  readonly="False">21</field>
+	<field name="IEC"  readonly="False">34</field>
+	<field name="Jack"  readonly="False">39</field>
+	<field name="MDR-20"  readonly="False">1</field>
+	<field name="Micro HDMI"  readonly="False">28</field>
+	<field name="Micro USB A 2.0"  readonly="False">28</field>
+	<field name="Micro USB B 2.0"  readonly="False">101</field>
+	<field name="Micro USB B 3.0"  readonly="False">16</field>
+	<field name="Mini Din 4 pin"  readonly="False">1</field>
+	<field name="Mini Display Port"  readonly="False">5</field>
+	<field name="Mini DisplayPort"  readonly="False">23</field>
+	<field name="Mini HDMI"  readonly="False">18</field>
+	<field name="Mini Toslink"  readonly="False">1</field>
+	<field name="Molex"  readonly="False">7</field>
+	<field name="OTG"  readonly="False">7</field>
+	<field name="Ottico"  readonly="False">1</field>
+	<field name="PS2"  readonly="False">1</field>
+	<field name="Pci-E"  readonly="False">1</field>
+	<field name="RCA"  readonly="False">18</field>
+	<field name="RGB"  readonly="False">1</field>
+	<field name="RJ-45"  readonly="False">2</field>
+	<field name="S-VGA"  readonly="False">89</field>
+	<field name="S-VHS"  readonly="False">6</field>
+	<field name="SAS"  readonly="False">2</field>
+	<field name="SATA"  readonly="False">99</field>
+	<field name="SATA II"  readonly="False">1</field>
+	<field name="SATA III"  readonly="False">5</field>
+	<field name="SCSI"  readonly="False">2</field>
+	<field name="SFF"  readonly="False">3</field>
+	<field name="Scart"  readonly="False">17</field>
+	<field name="Thunderbolt"  readonly="False">4</field>
+	<field name="Toslink"  readonly="False">17</field>
+	<field name="USB"  readonly="False">31</field>
+	<field name="USB  3.0"  readonly="False">1</field>
+	<field name="USB A 2.0"  readonly="False">85</field>
+	<field name="USB A 3.0"  readonly="False">50</field>
+	<field name="USB B 2.0"  readonly="False">116</field>
+	<field name="USB B 3.0"  readonly="False">44</field>
+	<field name="VGA"  readonly="False">201</field>
+	<field name="XGA"  readonly="False">3</field>
+	<field name="dock Apple"  readonly="False">2</field>
+	<field name="eSATA"  readonly="False">1</field>
+</facet>
+<facet type="attributi" id="113" name="Connessione" sort="8" mode="OR" um=" " selected="False"  gold='True' >
+
+	<field name="Bluetooth"  readonly="False">13</field>
+	<field name="Cavo"  readonly="False">1</field>
+	<field name="Con Cavo"  readonly="False">161</field>
+	<field name="Con filo"  readonly="False">143</field>
+	<field name="Cordless"  readonly="False">12</field>
+	<field name="USB"  readonly="False">2</field>
+	<field name="USB 2.0"  readonly="False">1</field>
+	<field name="Wireless"  readonly="False">9</field>
+</facet>
+<facet type="attributi" id="861" name="Genere OUT" sort="8" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="2 Femmina"  readonly="False">4</field>
+	<field name="2 Maschio"  readonly="False">2</field>
+	<field name="Femmina"  readonly="False">452</field>
+	<field name="Maschio"  readonly="False">1375</field>
+</facet>
+<facet type="attributi" id="208" name="Serie" sort="13" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="CM Storm"  readonly="False">4</field>
+</facet>
+<facet type="attributi" id="868" name="Caratteristiche NVIDIA" sort="14" mode="OR" um=" " selected="False"  gold='False' >
+
+	<field name="GeForce GTX Gaming"  readonly="False">5</field>
+</facet>
+<facet type="attributi" id="999999" name="Altre caratteristiche" sort="9999" mode="OR" um="" selected="False">
+
+	<field name="3D"  readonly="False">43</field>
+</facet>
+<facet type='promo' name='promo' label='promo' selected='False'>
+	<field id='[* TO 30]'>3781</field>
+	<field id='[30 TO *]'>928</field>
+</facet>
+
+<facet type='costo' name='costo' label='costo' selected='False'>
+	<field id='[* TO 30]'>3781</field>
+	<field id='[30 TO *]'>928</field>
+</facet>
+</facets>
+
+<sort>
+<field id="ranking desc" selected="False" >Rilevanza</field>
+<field id="Promo asc" selected="False" >Prezzo più basso</field>
+<field id="Promo desc" selected="False" >Prezzo più alto</field>
+<field id="FiltroNovita desc,ranking desc" selected="False" >Novità</field>
+<field id="dispo_ordinamento asc" selected="False" >Disponibilità</field>
+<field id="Manufacturer asc" selected="False" >Marca AZ</field>
+<field id="Manufacturer desc" selected="False" >Marca ZA</field>
+</sort><slugSuggeriti>
+	<slug name="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori" label="Cavi e Adattatori in Telefonia &amp; Mobile">
+	</slug>
+	<slug name="/informatica/componenti-assemblaggio/schede-video" label="Schede Video">
+	</slug>
+	<slug name="/informatica/componenti-assemblaggio/tastiere" label="Tastiere">
+	</slug>
+	<slug name="/informatica/networking-reti/cavi-di-rete" label="Cavi di Rete">
+	</slug>
+	<slug name="/telefonia-mobile/cellulari-e-smartphone/accessori-iphone/cavi-e-adattatori" label="Cavi e Adattatori in Cellulari &amp; Smartphone">
+	</slug>
+	<slug name="/audio-video-elettronica/adattatori-e-cavetteria/cavi-digitali" label="Cavi Digitali">
+	</slug>
+</slugSuggeriti>
+<related-keywords><keyword>cavo hdmi</keyword><keyword>cavo di rete utp cat6 2m verde</keyword><keyword>cavo micro hdmi</keyword><keyword>cavo hdmi 8 mt</keyword></related-keywords>
+<truePromoRange min='1,00' max='1070,00'/><promoRange min='1,00' max='1070,00'/><slugRisultati>
+	<slug name="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/cavi-e-adattatori" label="Cavi e Adattatori" image_ref="/007/101155007/n4783509.jpg" num="106"  selected="false"  pos="1"/>
+	<slug name="/informatica/componenti-assemblaggio/schede-video" label="Schede Video" image_ref="/126/101059126/n4577797.jpg" num="6"  selected="false"  pos="2"/>
+	<slug name="/informatica/componenti-assemblaggio/tastiere" label="Tastiere" image_ref="/213/100173213/n2066001.jpg" num="87"  selected="false"  pos="3"/>
+	<slug name="/informatica/networking-reti/cavi-di-rete" label="Cavi di Rete" image_ref="/873/101219873/n4985814.jpg" num="1576"  selected="false"  pos="4"/>
+	<slug name="/telefonia-mobile/cellulari-e-smartphone/accessori-iphone/cavi-e-adattatori" label="Cavi e Adattatori" image_ref="img_nodispo.gif" num="40"  selected="false"  pos="5"/>
+	<slug name="/audio-video-elettronica/adattatori-e-cavetteria/cavi-digitali" label="Cavi Digitali" image_ref="/932/100484932/n3103929.jpg" num="567"  selected="false"  pos="6"/>
+	<slug name="/informatica/accessori-cavetteria/cavetteria/cavi-usb" label="Cavi USB" image_ref="/001/101172001/n4826041.jpg" num="557"  selected="false"  pos="7"/>
+	<slug name="/audio-video-elettronica/adattatori-e-cavetteria/cavi-analogici" label="Cavi Analogici" image_ref="/756/101050756/n4215472.jpg" num="286"  selected="false"  pos="8"/>
+	<slug name="/informatica/portatili-notebook-tablet/cavi-di-sicurezza" label="Cavi di sicurezza" image_ref="/205/101048205/n4484513.jpg" num="46"  selected="false"  pos="9"/>
+	<slug name="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali/audio-cavi-e-adattatori" label="Audio Cavi e Adattatori" image_ref="/712/101297712/5157667.jpg" num="52"  selected="false"  pos="10"/>
+	<slug name="/informatica/portatili-notebook-tablet/accessori-vari-notebook" label="Accessori Vari Notebook" image_ref="/180/100472180/n3615738.jpg" num="30"  selected="false"  pos="11"/>
+	<slug name="/informatica/componenti-assemblaggio/mouse" label="Mouse" image_ref="/756/101133756/n4750138.jpg" num="179"  selected="false"  pos="12"/>
+	<slug name="/informatica/componenti-assemblaggio/cavi-e-adattatori-video/cavi-e-adattatori-video" label="Cavi e Adattatori Video" image_ref="/400/101056400/n4215645.jpg" num="390"  selected="false"  pos="13"/>
+	<slug name="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-compatibili/caricabatterie" label="Caricabatterie" image_ref="/098/101316098/n4165028.jpg" num="80"  selected="false"  pos="14"/>
+	<slug name="/informatica/componenti-assemblaggio/schede-di-espansione" label="Schede di Espansione" image_ref="/890/100974890/n4122229.jpg" num="49"  selected="false"  pos="15"/>
+	<slug name="/informatica/componenti-assemblaggio/cavi-vari-assemblaggio/cavi-vari-assemblaggio" label="Cavi vari assemblaggio" image_ref="/111/100674111/n3105497.jpg" num="259"  selected="false"  pos="16"/>
+	<slug name="/telefonia-mobile/cellulari-e-smartphone/accessori-telefonia-originali/caricabatterie" label="Caricabatterie" image_ref="/253/101290253/5157437.jpg" num="16"  selected="false"  pos="17"/>
+	<slug name="/audio-video-elettronica/home-video/staffe-e-mobili-per-tv" label="Staffe e Mobili per TV" image_ref="/511/100775511/n3745362.jpg" num="45"  selected="false"  pos="18"/>
+	<slug name="/informatica/memorie-e-dischi/cavi-dati-hdd" label="Cavi dati HDD" image_ref="/049/101186049/n4861465.jpg" num="39"  selected="false"  pos="19"/>
+	<slug name="/audio-video-elettronica/adattatori-e-cavetteria/cavi-antenna" label="Cavi Antenna" image_ref="/295/100232295/n2353053.jpg" num="38"  selected="false"  pos="20"/>
+	<slug name="/casa-cucina/sicurezza-automazione-casa/videosorveglianza" label="Videosorveglianza" image_ref="/904/100409904/n2956620.jpg" num="73"  selected="false"  pos="21"/>
+	<slug name="/brico-giardino-animali/materiale-elettrico/raccoglicavi-e-canaline" label="Raccoglicavi e Canaline" image_ref="/488/100976488/n4121415.jpg" num="5"  selected="false"  pos="22"/>
+	<slug name="/audio-video-elettronica/audio-e-mp3/accessori-ipod/alimentatori-e-cavi-ipod" label="Alimentatori e Cavi iPod" image_ref="/881/101075881/n4599846.jpg" num="25"  selected="false"  pos="23"/>
+	<slug name="/informatica/monitor-multimedia/cuffie-e-auricolari-pc" label="Cuffie e Auricolari PC" image_ref="/944/100933944/n4117264.jpg" num="158"  selected="false"  pos="24"/>
+</slugRisultati>
+</federator>
+</response>

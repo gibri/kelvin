@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response>
+ <responseHeader>
+ <field name='status'>0</field>
+ <field name='static_cache' val='false'>false</field>
+ <field name='lcache_time'>0</field>
+ <field name='wrapper_time'>103</field>
+ <field name='autofilter_time'>0</field>
+ <field name='server-name'>src-eprice-s4-l1.eprice.lan</field>
+ <params>
+ <field name='test'>test</field>
+ </params>
+<logger-analysis><querystring><![CDATA[q=B0000787]]></querystring><numfound>1</numfound><originalQuery><![CDATA[B0000787]]></originalQuery><autofilter>0</autofilter><queryType>raw</queryType><solrContext>tech</solrContext><conteggi><tech></tech><media></media><lisci></lisci></conteggi></logger-analysis></responseHeader>
+<federator name='search'>
+ <responseHeader>
+ <query>
+ <field name='original_query'>B0000787</field>
+ <field name='q'>b 0000787</field>
+ <field name='search_type'>raw</field>
+ <field name='search_context'>tech</field>
+ <field name='search_boost'>[]</field>
+ <field name='is_satelite'>False</field>
+ <field name='is_redirect'>False</field>
+ </query>
+ <field name='status'>0</field>
+ <field name='solr_qtime'>5</field>
+ <field name='solr_time'>7</field>
+ <field name='solr-url'><![CDATA[http://solr-search-server:8080/solr/0/select/?q=Codven%3AB0000787%2A%20OR%20namesearch%3A%22B0000787%22%20OR%20Codven%3A%2AB0000787&start=0&rows=10&wt=json&&custom_caller=None&facet.pivot=pidlevel_0,pidlevel_1&&qt=eprice_codven&caller_id=raw&stats=true&stats.field=Promo]]></field>
+ <altriRisultati>15174</altriRisultati> <params>
+<autofilter enable='True'>
+   <altriRisultati enable='True' numres='15174'/>
+ <context>tech</context>
+  <mostra_attributi>True</mostra_attributi>
+</autofilter>
+ <field name='view_mode'>lista</field>
+ <field name='q'>b 0000787</field>
+ <field name='nav_path'>None</field>
+ <field name='slug_path'>None</field>
+ <field name='nav_level'>2</field>
+ <field name='id_sito'>0</field>
+ <field name='rows'>10</field>
+ <field name='page'>1</field>
+ <field name='sort'>ranking</field>
+ </params>
+
+<slide_show_overlay>
+ <prev>0</prev>
+ <next>1</next>
+ <sku>5242728</sku>
+</slide_show_overlay></responseHeader>
+<result name='response' numFound='1' start='0'>
+<doc> <field name="Codven">B0000787</field>
+ <field name="image_file_dam">/img_nodispo.gif</field>
+ <field name="Prod_Id">B0000787</field>
+ <field name="SEOurl">/schede-video-SAPPHIRE/d-5242728</field>
+ <field name="sGenerico2">SAPPHIRE/D-LINK BUNDLE 11217-01-20G + DSL-3580L</field>
+ <field name="id">5242728</field>
+ <field name="sku">5242728</field>
+ <field name="Ricondizionato">False</field>
+ <field name="is_store">1</field>
+ <field name="isPromo">1</field>
+ <field name="Promo">298.99</field>
+ <field name="name">SAPPHIRE / D-LINK BUNDLE 11217-01-20G + DSL-3580L</field>
+ <field name="PathCat3">/informatica/componenti-assemblaggio/schede-video</field>
+ <field name="Url_Slug_20">/shop/informatica/componenti-assemblaggio/schede-video</field>
+ <field name="qualificatore">/img/icoPrezzoSpeciale.gif</field>
+<slug_preferenziale><slug is_store="0" path="/informatica"  indexed_google="True" image_ref="/666/101219666/n4897203.jpg">Informatica</slug><slug is_store="0" path="/informatica/componenti-assemblaggio"  indexed_google="True" image_ref="/945/101212945/n4966032.jpg">Componenti Assemblaggio</slug><slug is_store="0" path="/informatica/componenti-assemblaggio/schede-video"  indexed_google="True" image_ref="/126/101059126/n4577797.jpg">Schede Video</slug></slug_preferenziale> <field name="Outlet">False</field>
+ <field name="Url_Sku_40">/articoli/schede-video-SAPPHIRE/prod-9N9I3</field>
+ <field name="Tasso0">False</field>
+ <field name="Url_Sku_20">/informatica/componenti-assemblaggio/schede-video/item_15K25F</field>
+ <field name="Url_Slug_40">/regali/informatica/componenti-assemblaggio/schede-video</field>
+ <field name="ranking">163</field>
+ <field name="description"></field>
+ <field name="Dispo">5</field>
+ <field name="URL"></field>
+ <field name="IDListino">2</field>
+ <field name="PathCat3Manufacturer">/informatica/componenti-assemblaggio/schede-video&amp;br=SAPPHIRE</field>
+ <field name="Url_Sku_10">/shop/SAPPHIRE/id.3BD1FD</field>
+ <field name="hasAccessories">False</field>
+ <field name="aMagazzino">True</field>
+ <field descrizione="SAPPHIRE" immagine="img_nodispo.gif" name="Manufacturer">SAPPHIRE</field>
+ <field name="IVA">22</field>
+ <field name="Url_Slug_10">/store/informatica/componenti-assemblaggio/schede-video</field>
+ <field name="descCat3">Schede Video</field>
+ <field name="descCat2">Componenti Assemblaggio</field>
+ <field name="descCat1">Informatica</field>
+ <field name="Url_Slug_30">/promo/informatica/componenti-assemblaggio/schede-video</field>
+ <field name="store_slugs">/informatica/personal-computer/schede-video,/informatica/componenti-assemblaggio/schede-video</field>
+ <field name="idSito">0</field>
+ <field name="costo">337.0</field>
+ <field name="Url_Sku_30">/vendita/informatica-SAPPHIRE/prod-111740A</field>
+ <field name="IDCat1">259</field>
+ <field name="iGenerico2">214</field>
+ <field name="IDCat3">495</field>
+ <field name="IDCat2">314</field>
+ <field name="hres_file_dam">false</field>
+ <field name="iGenerico4">0</field>
+</doc></result>
+<facets>
+<tree>
+<!--no head pivots-->
+ <nodo level="1" selected="True">
+  <field name='id'>/5769/5822</field>
+  <field name='count'>1</field>
+  <field name='label'>Componenti Assemblaggio</field>
+  <field name='slug'>/informatica/componenti-assemblaggio</field>
+  <field name='is_store'>False</field>
+  <field name='indexed_google'>True</field>
+  <field name='image_ref'>/945/101212945/n4966032.jpg</field>
+  <nodo level="2" selected="False">
+   <field name='id'>/5769/5822/6733</field>
+   <field name='count'>1</field>
+   <field name='label'>Schede Video</field>
+   <field name='slug'>/informatica/componenti-assemblaggio/schede-video</field>
+   <field name='is_store'>False</field>
+   <field name='indexed_google'>True</field>
+   <field name='image_ref'>/126/101059126/n4577797.jpg</field>
+  </nodo>
+ </nodo>
+</tree>
+
+<facet type="generico" name="FiltroPromo" label="Promozioni" mode="AND" selected="False">
+
+	<field  id="true">1</field>
+</facet>
+<facet type="generico" name="FiltroNovita" label="Novità" mode="AND" selected="False">
+
+	<field  id="false">1</field>
+</facet>
+<facet type="generico" name="store_slug" label="Store" mode="AND" selected="False">
+
+</facet>
+<facet type="generico" name="FiltroDispo" label="Disponibili" mode="AND" selected="False">
+
+	<field  id="true">1</field>
+</facet>
+<facet type="generico" name="FiltroFreeShipping" label="Spedizione Gratuita" mode="AND" selected="False">
+
+	<field  id="false">1</field>
+</facet>
+<facet type="generico" name="FastShipping" label="Pronta Consegna" mode="AND" selected="False">
+
+	<field  id="0">1</field>
+</facet>
+<facet type="generico" name="Manufacturer" label="Brand" mode="OR" selected="False">
+
+	<field descrizione="SAPPHIRE" immagine="img_nodispo.gif" id="SAPPHIRE">1</field>
+</facet>
+<facet type='promo' name='promo' label='promo' selected='False'>
+	<field id='[* TO 30]'>0</field>
+	<field id='[30 TO 50]'>0</field>
+	<field id='[50 TO 100]'>0</field>
+	<field id='[100 TO 150]'>0</field>
+	<field id='[150 TO 200]'>0</field>
+	<field id='[200 TO 300]'>1</field>
+	<field id='[300 TO 500]'>0</field>
+	<field id='[500 TO 700]'>0</field>
+	<field id='[700 TO 1000]'>0</field>
+	<field id='[1000 TO 2000]'>0</field>
+	<field id='[2000 TO *]'>0</field>
+</facet>
+
+<facet type='costo' name='costo' label='costo' selected='False'>
+	<field id='[* TO 30]'>0</field>
+	<field id='[30 TO 50]'>0</field>
+	<field id='[50 TO 100]'>0</field>
+	<field id='[100 TO 150]'>0</field>
+	<field id='[150 TO 200]'>0</field>
+	<field id='[200 TO 300]'>1</field>
+	<field id='[300 TO 500]'>0</field>
+	<field id='[500 TO 700]'>0</field>
+	<field id='[700 TO 1000]'>0</field>
+	<field id='[1000 TO 2000]'>0</field>
+	<field id='[2000 TO *]'>0</field>
+</facet>
+</facets>
+
+<sort>
+<field id="ranking desc" selected="False" >Rilevanza</field>
+<field id="Promo asc" selected="False" >Prezzo più basso</field>
+<field id="Promo desc" selected="False" >Prezzo più alto</field>
+<field id="FiltroNovita desc,ranking desc" selected="False" >Novità</field>
+<field id="dispo_ordinamento asc" selected="False" >Disponibilità</field>
+<field id="Manufacturer asc" selected="False" >Marca AZ</field>
+<field id="Manufacturer desc" selected="False" >Marca ZA</field>
+</sort>
+<truePromoRange min='298,00' max='299,00'/><promoRange min='298,00' max='299,00'/><slugRisultati>
+	<slug name="/informatica/componenti-assemblaggio/schede-video" label="Schede Video" image_ref="/126/101059126/n4577797.jpg" num="1"  selected="false"  pos="1"/>
+</slugRisultati>
+</federator>
+</response>
