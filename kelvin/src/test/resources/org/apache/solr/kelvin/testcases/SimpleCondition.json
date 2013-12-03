@@ -1,0 +1,28 @@
+{
+	"missing len" : {
+	  "rem":"missing len"
+	},
+	"missing field" : {
+		"len":10
+	},
+	"missing vals" : {
+		"len":10,
+		"field":"name"
+	},
+	"legacy" : {
+		"len":10,
+		"field":"name",
+		"args":"iphone"
+	},
+	"legacy multivalue" : {
+		"len":10,
+		"field":"name+manufacturer",
+		"args":"apple"
+	},
+	"std" : {
+		"len":5,
+		"field":["name","manufacturer"],
+		"values":["a","b"]
+	}
+	
+}

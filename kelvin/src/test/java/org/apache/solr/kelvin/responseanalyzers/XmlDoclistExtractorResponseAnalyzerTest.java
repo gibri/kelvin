@@ -53,4 +53,22 @@ public class XmlDoclistExtractorResponseAnalyzerTest extends TestCase {
 		resp = parseResource("/org/apache/solr/kelvin/responseanalyzers/multiResult.xml");
 		assertEquals(10, resp.size());
 	}
+	
+	public static Map<String,Object> quickParseForTest(String resName) throws Exception {
+		Map<String,Object> previousResponses = new HashMap<String, Object>();
+		JsonNode emptyConf = JsonNodeFactory.instance.objectNode();
+		XmlResponseAnalyzer ra_xml = new XmlResponseAnalyzer();
+		ra_xml.configure(emptyConf);
+		XmlDoclistExtractorResponseAnalyzer ra = new XmlDoclistExtractorResponseAnalyzer();
+		ra.configure(emptyConf); //empty conf
+		
+		previousResponses. put(QueryPerformer.RAW_RESPONSE, IOUtils.toString(XmlResponseAnalyzerTest.class.getResourceAsStream(resName), "utf8"));
+		try {
+			ra_xml.decode(previousResponses);
+		} catch (Exception e) {
+			//its ok to skip, the class must works also in case of errors
+		}
+		ra.decode(previousResponses);
+		return previousResponses;
+	}
 }

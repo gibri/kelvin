@@ -4,6 +4,7 @@ import static org.apache.solr.kelvin.testcases.SimpleTestCase.mandatory;
 import static org.apache.solr.kelvin.testcases.SimpleTestCase.readStringArrayOpt;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -13,6 +14,7 @@ import org.apache.solr.kelvin.ConfigurableLoader;
 import org.apache.solr.kelvin.ICondition;
 import org.apache.solr.kelvin.ITestCase;
 import org.apache.solr.kelvin.events.ConditionFailureTestEvent;
+import org.apache.solr.kelvin.events.ConditionsNotMetTestEvent;
 import org.apache.solr.kelvin.events.MissingFieldTestEvent;
 import org.apache.solr.kelvin.events.MissingResultTestEvent;
 import org.apache.solr.kelvin.responseanalyzers.XmlDoclistExtractorResponseAnalyzer;
@@ -27,6 +29,18 @@ public class ValueListCondition  implements ICondition {
 	
 	private boolean legacy = false;
 	
+	public String getField() {
+		return field;
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public List<String> getCorrectValuesList() {
+		return Collections.unmodifiableList(correctValuesList);
+	}
+
 	public void init(int _len, String _field, List<String> _values) {
 		field = _field;
 		length=_len;
@@ -74,7 +88,7 @@ public class ValueListCondition  implements ICondition {
 					fieldValue = ConfigurableLoader.assureArray(fieldValue);
 					boolean found = false;
 					for (int j=0;j<fieldValue.size();j++) {
-						if (this.correctValuesList.contains( fieldValue.get(j) ))
+						if (this.correctValuesList.contains( fieldValue.get(j).asText() ))
 						{ found=true; break; }
 						else if (legacy)  {
 							for (String cond : correctValuesList) {
@@ -86,7 +100,7 @@ public class ValueListCondition  implements ICondition {
 						}
 					}
 					if (!found)
-						ret.add(new ConditionFailureTestEvent(testCase, queryParams, "unexpected vaule", i));
+						ret.add(new ConditionsNotMetTestEvent(testCase, queryParams, "unexpected vaule", i));
 				}
 			}
 		}

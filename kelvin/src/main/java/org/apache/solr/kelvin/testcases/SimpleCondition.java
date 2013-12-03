@@ -4,6 +4,7 @@ import static org.apache.solr.kelvin.testcases.SimpleTestCase.mandatory;
 import static org.apache.solr.kelvin.testcases.SimpleTestCase.readStringArrayOpt;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -57,6 +58,18 @@ public class SimpleCondition implements ICondition {
 		if (values.size()==0)
 			throw new Exception("missin condition values");
 		init(len, realFiels, values);
+	}
+
+	public List<String> getFields() {
+		return Collections.unmodifiableList(fields);
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public List<String> getCorrectValuesList() {
+		return Collections.unmodifiableList(correctValuesList);
 	}
 
 	public List<ConditionFailureTestEvent> verifyConditions(ITestCase testCase,

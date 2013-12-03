@@ -1,0 +1,50 @@
+{
+	"legacy": {
+		"len":5,
+		"mode":"slug",
+		"slug":["/a/c","/a/d"]
+	},
+	"std": {
+		"len":5,
+		"field":"slug",
+		"values":["/a/c","/a/d"]
+	},
+	"short": {
+		"len":5,
+		"field":"slug",
+		"values":"true"
+	},
+	"nolen": {
+		"field":"slug",
+		"values":"true"
+	},
+	"nofield": {
+		"len":5,
+		"values":"true"
+	},
+	"noval": {
+		"len":5,
+		"field":"slug"
+	},
+	"base": {
+	  "len":3,
+	  "field":"vertical",
+	  "values":["10","20"]
+	},
+	"twoErrs": {
+	  "len":10,
+	  "field":"vertical",
+	  "values":["30"]
+	},
+	"missingResult": {
+	  "len":11,
+	  "field":"vertical",
+	  "values":["10"]
+	},
+	"unknownField": {
+	  "len":4,
+	  "field":"unknown",
+	  "values":"x"
+	}
+	
+}
