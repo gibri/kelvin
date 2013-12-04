@@ -37,7 +37,7 @@ public class LegacyResponseAnalyzer implements ResponseAnalyzer {
 			ObjectNode oDoc = mapper.createObjectNode();
 			Node subel = doc.getFirstChild();
 			while (subel!=null) {
-				String localName = subel.getLocalName();
+				String localName = subel.getNodeName(); 
 				if (localName == "field") {
 					String fieldName = subel.getAttributes().getNamedItem("name").getNodeValue();
 					if (! "infoold".equals(fieldName)) {

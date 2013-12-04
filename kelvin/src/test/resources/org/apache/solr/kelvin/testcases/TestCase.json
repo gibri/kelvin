@@ -1,0 +1,19 @@
+{
+	"base": {
+		"type":"SimpleTestCase",
+		"q": ["ipod","i pod"],
+		"conditions": [
+			{
+				"len":3,
+				"field":"tag",
+				"args":"usb"
+			},
+		    {
+				"len":10,
+				"type":"valueList",
+				"field":"vertical",
+				"values":["30"]
+			}
+		]
+	}
+}

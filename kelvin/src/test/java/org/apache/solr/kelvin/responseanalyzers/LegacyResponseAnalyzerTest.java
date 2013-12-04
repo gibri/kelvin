@@ -36,6 +36,26 @@ public class LegacyResponseAnalyzerTest extends TestCase {
 		return (ArrayNode) previousResponses.get(XmlDoclistExtractorResponseAnalyzer.DOC_LIST);
 	}
 
+	public static Map<String,Object> quickParseForTest(String resourceName) throws Exception {
+		LegacyResponseAnalyzer ra = new LegacyResponseAnalyzer();
+		JsonNode emptyConf = JsonNodeFactory.instance.objectNode();
+		ra.configure(emptyConf); //empty conf
+		
+		XmlResponseAnalyzer ra_xml = new XmlResponseAnalyzer();
+		ra_xml.configure(emptyConf);
+		
+		Map<String,Object> previousResponses = new HashMap<String, Object>();
+		previousResponses. put(QueryPerformer.RAW_RESPONSE, IOUtils.toString(XmlResponseAnalyzerTest.class.getResourceAsStream(resourceName), "utf8"));
+		try {
+		ra_xml.decode(previousResponses);
+		} catch (Exception e) {
+			//its ok to skip, the class must works also in case of errors
+		}
+		ra.decode(previousResponses);
+		
+		return previousResponses;
+	}
+	
 	private LegacyResponseAnalyzer ra;
 	private XmlResponseAnalyzer ra_xml;
 	

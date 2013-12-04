@@ -9,13 +9,13 @@ import org.apache.solr.kelvin.testcases.ValueListCondition;
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class SingletonConditionRegistry {
-	private static SimpleClassRegistry<ICondition> registry= new SimpleClassRegistry<ICondition>();
+	private static SimpleClassRegistry<ICondition> registry= new SimpleClassRegistry<ICondition>(ICondition.class);
 	
 	public static void configure(JsonNode config) throws Exception {
 		registry.configure(config);
 		//default built in conditions
 		Map<String,Class<?>> defaults = new TreeMap<String,Class<?>>();
-		defaults.put(null, SimpleCondition.class);
+		//defaults.put(null, SimpleCondition.class);
 		defaults.put("", SimpleCondition.class);
 		defaults.put("default", SimpleCondition.class);
 		defaults.put("valueList", ValueListCondition.class);

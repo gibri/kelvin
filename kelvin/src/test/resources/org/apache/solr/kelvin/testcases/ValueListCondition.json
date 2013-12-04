@@ -45,6 +45,16 @@
 	  "len":4,
 	  "field":"unknown",
 	  "values":"x"
+	},
+	"legacyStar": {
+		"len":"3",
+		"mode":"slug",
+		"slug":["/telefonia-mobile/*"]
+	},
+	"legacyStarErr": {
+		"len":"3",
+		"mode":"slug",
+		"slug":["/bad/*"]
 	}
 	
 }

@@ -8,13 +8,13 @@ import org.apache.solr.kelvin.testcases.SimpleTestCase;
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class SingletonTestRegistry {
-	private static SimpleClassRegistry<ITestCase> registry= new SimpleClassRegistry<ITestCase>();
+	private static SimpleClassRegistry<ITestCase> registry= new SimpleClassRegistry<ITestCase>(ITestCase.class);
 	
 	public static void configure(JsonNode config) throws Exception {
 		registry.configure(config);
 		//default built in conditions
 		Map<String,Class<?>> defaults = new TreeMap<String,Class<?>>();
-		defaults.put(null, SimpleTestCase.class);
+		//defaults.put(null, SimpleTestCase.class);
 		defaults.put("", SimpleTestCase.class);
 		defaults.put("default", SimpleTestCase.class);
 		registry.addMappingsFromClasses(defaults);

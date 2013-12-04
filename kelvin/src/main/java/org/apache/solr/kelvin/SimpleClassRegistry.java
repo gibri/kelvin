@@ -9,8 +9,11 @@ import java.util.Map.Entry;
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class SimpleClassRegistry<T> {
-	public SimpleClassRegistry() {	
+	public SimpleClassRegistry(Class<T> _targetClass) {
+		requiredClass = _targetClass;
 	}
+	
+	private Class<T> requiredClass;
 	
 	private Map<String , Class<?>> map = new HashMap<String, Class<?>>();
 
@@ -31,9 +34,8 @@ public class SimpleClassRegistry<T> {
 	public void addMappingsFromClasses(Map<String,Class<?>> mappings) throws ClassNotFoundException {
 		for (Map.Entry<String, Class<?>> entry :mappings.entrySet()){
 			Class<?> target = entry.getValue();
-			Class<?> required = this.getClass().getTypeParameters()[0].getClass();
-			if (!required.isAssignableFrom(target)) {
-				throw new ClassCastException(String.format("%s does not implements %s",target.getName(),required.getName()));
+			if (!requiredClass.isAssignableFrom(target)) {
+				throw new ClassCastException(String.format("%s does not implements %s",target.getName(),requiredClass.getName()));
 			}
 		     
 			map.put(entry.getKey(),

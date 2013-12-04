@@ -4,13 +4,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.apache.solr.kelvin.SingletonConditionRegistry;
+import org.apache.solr.kelvin.SingletonTestRegistry;
 import org.apache.solr.kelvin.events.ConditionFailureTestEvent;
 import org.apache.solr.kelvin.events.ConditionsNotMetTestEvent;
 import org.apache.solr.kelvin.events.MissingFieldTestEvent;
 import org.apache.solr.kelvin.events.MissingResultTestEvent;
+import org.apache.solr.kelvin.responseanalyzers.LegacyResponseAnalyzerTest;
 import org.apache.solr.kelvin.responseanalyzers.XmlDoclistExtractorResponseAnalyzerTest;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 
 import junit.framework.TestCase;
 
@@ -104,6 +108,20 @@ public class ValueListConditionTest extends TestCase {
 		}
 	}
 	
+	public void testLegacyWithStar() throws Exception {
+		Map<String,Object> legacyData = LegacyResponseAnalyzerTest.quickParseForTest("/org/apache/solr/kelvin/responseanalyzers/legacyMultiResult.xml");
+		
+		ValueListCondition v = get("legacyStar");
+		Properties queryParams = new Properties();
+		
+		List<ConditionFailureTestEvent> errors = v.verifyConditions(null, queryParams, legacyData, null);
+		assertEquals(0,  errors.size());
+		
+		v = get("legacyStarErr");
+		errors = v.verifyConditions(null, queryParams, legacyData, null);
+		assertEquals(3,  errors.size());
+		
+	}
 	private ValueListCondition get(String name) throws Exception {
 		ValueListCondition v = new  ValueListCondition();
 		v.configure(configs.get(name));
