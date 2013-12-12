@@ -1,5 +1,6 @@
 package org.apache.solr.kelvin.testcases;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -37,8 +38,11 @@ public class SimpleTestCase implements ITestCase {
 
 	public List<ConditionFailureTestEvent> verifyConditions(
 			Properties queryParams, Map<String, Object> decodedResponses) {
-		// TODO Auto-generated method stub
-		return null;
+		List<ConditionFailureTestEvent> ret = new ArrayList<ConditionFailureTestEvent>();
+		for (ICondition condition: this.conditonList) {
+			ret.addAll( condition.verifyConditions(this, queryParams, decodedResponses, null) );
+		}
+		return ret;
 	}
 
 	private List<String> queries=new LinkedList<String>();

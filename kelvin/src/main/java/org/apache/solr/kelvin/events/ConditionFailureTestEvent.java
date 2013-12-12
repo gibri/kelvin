@@ -10,7 +10,8 @@ public class ConditionFailureTestEvent extends TestEvent {
 	@Override
 	public String toString() {
 		if (hasPosition())
-			return String.format("%s position %s description %s", this.getParameters(), this.position, this.description);
+			// Humans like first result is number one.
+			return String.format("%s position %s description %s", this.getParameters(), this.position+1, this.description);
 		else 
 			return String.format("%s description %s", this.getParameters(), this.description);
 	}

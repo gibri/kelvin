@@ -100,8 +100,8 @@ public class SimpleCondition implements ICondition {
 							for (int j=0;j<fieldValue.size();j++) {
 								allText=allText+" "+fieldValue.get(j);
 							}
-							checkAllWords(testCase, queryParams, ret, i,
-									allText);
+							//checkAllWords(testCase, queryParams, ret, i,
+							//		allText);
 							
 						} else {
 							String stringFieldValue = fieldValue.asText();

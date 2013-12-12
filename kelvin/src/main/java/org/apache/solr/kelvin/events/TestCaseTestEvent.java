@@ -23,7 +23,7 @@ public class TestCaseTestEvent extends TestEvent {
 		starting = _starting;
 	}
 	
-	
+	/** is real query or is just test x is starting */
 	public boolean isSingleQuery() {
 		return this.getParameters()!=null;
 	}

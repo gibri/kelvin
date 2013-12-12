@@ -10,31 +10,34 @@ import java.util.Observable;
 import org.apache.solr.kelvin.Measure;
 import org.apache.solr.kelvin.Scorer;
 import org.apache.solr.kelvin.TestEvent;
+import org.apache.solr.kelvin.events.ExceptionTestEvent;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class EventCollectorScorer extends Scorer {
 
-	private Map<Class<?>, List<TestEvent>> collectedEvents = new HashMap<Class<?>, List<TestEvent>>();
+	private Map<Class<?>, List<Object>> collectedEvents = new HashMap<Class<?>, List<Object>>();
 	
 	public void update(Observable o, Object arg) {
+		if (arg instanceof ExceptionTestEvent) {
+			arg = ((ExceptionTestEvent)arg).getException();
+		}
 		Class<? extends Object> eventClass = arg.getClass();
 		if (! collectedEvents.containsKey(eventClass)) {
-			collectedEvents.put(eventClass, new ArrayList<TestEvent>());
+			collectedEvents.put(eventClass, new ArrayList<Object>());
 		}
-		collectedEvents.get(eventClass).add((TestEvent)arg);
+		collectedEvents.get(eventClass).add(arg);
 	}
 
 	@Override
 	public void configure(JsonNode config) throws Exception {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public List<Measure> measureReport() {
 		ArrayList<Measure> ret = new ArrayList<Measure>();
-		for (Entry<Class<?>, List<TestEvent>> entry : collectedEvents.entrySet() ) {
+		for (Entry<Class<?>, List<Object>> entry : collectedEvents.entrySet() ) {
 			ret.add(new Measure(this.getClass().getName(), entry.getKey().getName(), entry.getValue().size()));
 		}
 		return ret;
@@ -45,7 +48,7 @@ public class EventCollectorScorer extends Scorer {
 		sb.append("Collected Events =======================================================\n");
 		for (Class<?> type : collectedEvents.keySet()) {
 			sb.append(type.getName()).append('\n');
-			for (TestEvent event : collectedEvents.get(type)) {
+			for (Object event : collectedEvents.get(type)) {
 				sb.append(event.toString()).append('\n');
 			}
 		}

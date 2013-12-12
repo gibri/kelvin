@@ -46,7 +46,7 @@ public class SimpleScorer extends Scorer {
 
 	@Override
 	public List<Measure> measureReport() {
-		Measure count = new Measure("SimpleScorer","failires",failureCount);
+		Measure count = new Measure("SimpleScorer","failures",failureCount);
 		ArrayList<Measure> ret = new ArrayList<Measure>();
 		ret.add(count);
 		return ret;
