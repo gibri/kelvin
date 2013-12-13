@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.solr.kelvin.ConfigurableLoader;
 import org.apache.solr.kelvin.ICondition;
 import org.apache.solr.kelvin.ITestCase;
@@ -82,25 +83,28 @@ public class ValueListCondition  implements ICondition {
 			} else {
 				JsonNode row = results.get(i);
 				if (!row.has(field)) {
-					ret.add(new MissingFieldTestEvent(testCase, queryParams, "missing field from result",i));
+					ret.add(new MissingFieldTestEvent(testCase, queryParams, "missing field "+field+" from result",i));
 				} else {
 					JsonNode fieldValue = row.get(field);
 					fieldValue = ConfigurableLoader.assureArray(fieldValue);
 					boolean found = false;
+					ArrayList<String> allTextValues = new ArrayList<String>();
 					for (int j=0;j<fieldValue.size();j++) {
-						if (this.correctValuesList.contains( fieldValue.get(j).asText() ))
+						String fieldText = fieldValue.get(j).asText();
+						allTextValues.add(fieldText);
+						if (this.correctValuesList.contains( fieldText ))
 						{ found=true; break; }
 						else if (legacy)  {
 							for (String cond : correctValuesList) {
 								if (cond.endsWith("*")) {
-									if (fieldValue.get(j).asText().startsWith(cond.substring(0, cond.length()-1)))
+									if (fieldText.startsWith(cond.substring(0, cond.length()-1)))
 									{ found=true; break; }
 								}
 							}
 						}
 					}
 					if (!found)
-						ret.add(new ConditionsNotMetTestEvent(testCase, queryParams, "unexpected vaule", i));
+						ret.add(new ConditionsNotMetTestEvent(testCase, queryParams, "unexpected vaule ["+StringUtils.join(allTextValues,',')+"] not in "+correctValuesList.toString(), i));
 				}
 			}
 		}

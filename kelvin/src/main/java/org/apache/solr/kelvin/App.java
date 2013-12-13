@@ -38,6 +38,13 @@ public class App
     	new App(args);
     }
     
+    public void help() {
+    	System.out.println("-c <filename> mandatory configuration file name\n"
+    			+ "-d optional directory to scan, all json files therein will be considered tests\n"
+    			+ "-e file encoding default utf8\n"
+    			+ "\n"
+    			+ "all other parameters must be valid json test files\n");
+    }
     public App(String [] args) {
     	Options options = new Options();
     	
@@ -55,8 +62,14 @@ public class App
 			if (cmd.hasOption('c')) {
 				rootConfigNode = readFileToJsonNode(cmd.getOptionValue('c'));
 			} else {
-				InputStream cfg = this.getClass().getResourceAsStream("org.apache.solr.kelvin.defaultConfig.conf");
-				rootConfigNode = parseJson(IOUtils.toString(cfg, this.defautEncoding));
+				if (new File("kelvin.json").canRead()) {
+					rootConfigNode = readFileToJsonNode("kelvin.json");
+				} else {
+					help();
+					return;
+				}
+				//InputStream cfg = this.getClass().getResourceAsStream("org.apache.solr.kelvin.defaultConfig.conf");
+				//rootConfigNode = parseJson(IOUtils.toString(cfg, this.defautEncoding));
 			}
 					
 			scanDirectory(cmd);
@@ -66,6 +79,7 @@ public class App
 			}
 			
 			if (testFiles.size()==0) {
+				help();
 				System.err.println("no test cases specified!");
 				return;
 			}
@@ -182,7 +196,8 @@ public class App
 	private List<ITestCase> testCases;
 	
 	private void configureTestsFromJsonNode(JsonNode node) throws Exception {
-		testCases = new ArrayList<ITestCase>();
+		if (testCases == null)
+			testCases = new ArrayList<ITestCase>(); //otherwise appends
 		ArrayNode list = ConfigurableLoader.assureArray(node);
 		for (int i=0; i<list.size(); i++) {
 			JsonNode config =list.get(i);

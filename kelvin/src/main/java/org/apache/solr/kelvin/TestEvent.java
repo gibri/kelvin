@@ -23,7 +23,7 @@ public class TestEvent {
 
 	@Override
 	public String toString() {
-		return parameters.toString();
+		return parameters!= null ? parameters.toString() : "";
 	}
 	
 }

@@ -5,9 +5,11 @@ import static org.apache.solr.kelvin.testcases.SimpleTestCase.readStringArrayOpt
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
@@ -56,7 +58,7 @@ public class SimpleCondition implements ICondition {
 		if (condition.has("values"))
 			readStringArrayOpt(condition.get("values"),values);
 		if (values.size()==0)
-			throw new Exception("missin condition values");
+			throw new Exception("missing condition values");
 		init(len, realFiels, values);
 	}
 
@@ -72,6 +74,31 @@ public class SimpleCondition implements ICondition {
 		return Collections.unmodifiableList(correctValuesList);
 	}
 
+	/** shourd manufacturer match Manufacturer */
+	private boolean caseInsentiveFieldsName=true;
+	
+	private boolean hasField(JsonNode o, String field) {
+		if (!caseInsentiveFieldsName)
+			return o.has(field);
+		Iterator<String> names = o.fieldNames();
+		while (names.hasNext()) 
+			if (field.equalsIgnoreCase(names.next()))
+				return true;
+		return false;
+	}
+	
+	private JsonNode getField(JsonNode o, String field) {
+		if (!caseInsentiveFieldsName)
+			return o.get(field);
+		Iterator<Entry<String, JsonNode>> i = o.fields();
+		while (i.hasNext()) {
+			Entry<String,JsonNode> e = i.next();
+			if (field.equalsIgnoreCase(e.getKey()))
+				return e.getValue();
+		}
+		throw new NullPointerException();
+	}
+	
 	public List<ConditionFailureTestEvent> verifyConditions(ITestCase testCase,
 			Properties queryParams, Map<String, Object> decodedResponses,
 			Object testSpecificArgument) {
@@ -87,15 +114,15 @@ public class SimpleCondition implements ICondition {
 				JsonNode row = results.get(i);
 				boolean allFields = true;
 				for (String field : this.fields) {
-					if (!row.has(field)) {
-						ret.add(new MissingFieldTestEvent(testCase, queryParams, "missing field from result",i));
+					if (! hasField(row,field)) {
+						ret.add(new MissingFieldTestEvent(testCase, queryParams, "missing field from result - "+field,i));
 						allFields=false;
 					}
 				}
 				if (allFields) {
 					String allText="";
 					for (String field : fields) {
-						JsonNode fieldValue = row.get(field);
+						JsonNode fieldValue = getField(row,field);
 						if (fieldValue.isArray()) {
 							for (int j=0;j<fieldValue.size();j++) {
 								allText=allText+" "+fieldValue.get(j);

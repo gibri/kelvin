@@ -13,7 +13,7 @@ public class Measure {
 	
 	@Override
 	public String toString() {
-		return "" + scorer + "." + measureName
+		return "" + scorer + " -> " + measureName
 				+ " = " + value;
 	}
 	public String getScorer() {

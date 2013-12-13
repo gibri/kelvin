@@ -23,7 +23,8 @@ public class URLQueryPerformer extends QueryPerformer {
 	private CloseableHttpClient httpclient = HttpClients.createDefault();
 
 	public void configure(JsonNode baseConfiguration) throws Exception {
-		String newBaseUrl = baseConfiguration.path("URLQueryBuilder")
+		super.configure(baseConfiguration);
+		String newBaseUrl = baseConfiguration//.path("URLQueryBuilder")
 				.path("baseUrl").asText();
 		if (newBaseUrl != null)
 			baseUrl = newBaseUrl;

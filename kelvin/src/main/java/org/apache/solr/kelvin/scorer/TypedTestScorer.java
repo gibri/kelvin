@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 public class TypedTestScorer extends Scorer {
 
-	private long counter = 0;
+	protected long counter = 0;
 	protected String type;
 	protected Class<?> typeClass;
 

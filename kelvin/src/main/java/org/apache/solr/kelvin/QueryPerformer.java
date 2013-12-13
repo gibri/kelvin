@@ -16,8 +16,15 @@ import org.apache.solr.kelvin.events.ResponseDecodedTestEvent;
 import org.apache.solr.kelvin.events.TestCaseTestEvent;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 
 public abstract class QueryPerformer extends Observable implements Closeable, IConfigurable {
+
+	public void configure(JsonNode config) throws Exception {
+		ResponseAnalyzerLoader loader = new ResponseAnalyzerLoader();
+		loader.configure(config.get("responseAnalyzers"));
+		this.responseAnalyzers = loader.getAnalyzers();
+	}
 
 	/**
 	 * given query parameters and test case performs actual test

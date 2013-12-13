@@ -5,7 +5,7 @@ import java.util.Map;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
-public interface ResponseAnalyzer {
+public interface ResponseAnalyzer extends IConfigurable {
 
 	/**
 	 * given raw data obtained by IQueryPerformer (usually a big string with all the response)
