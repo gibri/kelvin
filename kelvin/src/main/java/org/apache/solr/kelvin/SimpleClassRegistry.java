@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
@@ -46,8 +48,13 @@ public class SimpleClassRegistry<T> {
 	
 	public boolean canMap(String name) { return map.containsKey(name); }
 	
-	public T instantiate(String name) throws SecurityException, NoSuchMethodException, IllegalArgumentException, InstantiationException, IllegalAccessException, InvocationTargetException {
-		return  (T)(map.get(name).getConstructor().newInstance());
+	public T instantiate(String name) throws Exception {
+		try {
+			return  (T)(map.get(name).getConstructor().newInstance());
+		} catch (Exception e) {
+			Logger.getLogger(this.getClass().getName()).log(Level.SEVERE,"illegal argument "+name,e);
+			throw e;
+		}
 	}
 	
 	public void configure(JsonNode config) throws Exception {

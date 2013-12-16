@@ -29,6 +29,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
  */
 public class App 
 {
+	public static final String DEFAULT_CONF_FILENAME = "kelvin.conf";
 	private String defautEncoding ="utf8";
 	private JsonNode rootConfigNode;
 	private List<JsonNode> testFiles = new ArrayList<JsonNode>();
@@ -62,8 +63,8 @@ public class App
 			if (cmd.hasOption('c')) {
 				rootConfigNode = readFileToJsonNode(cmd.getOptionValue('c'));
 			} else {
-				if (new File("kelvin.json").canRead()) {
-					rootConfigNode = readFileToJsonNode("kelvin.json");
+				if (new File(DEFAULT_CONF_FILENAME).canRead()) {
+					rootConfigNode = readFileToJsonNode(DEFAULT_CONF_FILENAME);
 				} else {
 					help();
 					return;
@@ -76,6 +77,10 @@ public class App
 			
 			for (String testCase : cmd.getArgs()) {
 				testFiles.add(readFileToJsonNode(testCase));
+			}
+			
+			if (testFiles.size()==0) { //nothing passed? try current dir
+				scanDirectory(System.getProperty("user.dir")); 
 			}
 			
 			if (testFiles.size()==0) {
@@ -142,12 +147,18 @@ public class App
 	
 	private void scanDirectory(CommandLine cmd) throws Exception {
 		if (cmd.hasOption('d')) {
-			String extensions[]={".json"};
-			@SuppressWarnings("unchecked")
-			Iterator<File> i = FileUtils.iterateFiles(new File(cmd.getOptionValue('d')), extensions, true);
-			while (i.hasNext()) {
-				testFiles.add(readFileToJsonNode(i.next()));
-			}
+			
+			scanDirectory(cmd.getOptionValue('d'));
+		}
+	}
+
+	private void scanDirectory(String dirName)
+			throws Exception {
+		String extensions[]={"json"};
+		@SuppressWarnings("unchecked")
+		Iterator<File> i = FileUtils.iterateFiles(new File(dirName), extensions, true);
+		while (i.hasNext()) {
+			testFiles.add(readFileToJsonNode(i.next()));
 		}
 	}
 	

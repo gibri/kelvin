@@ -156,7 +156,7 @@ public class SimpleCondition implements ICondition {
 			}
 		}
 		if (failure)
-			ret.add(new ConditionFailureTestEvent(testCase, queryParams, "not all words found",i));
+			ret.add(new ConditionFailureTestEvent(testCase, queryParams, String.format("not all words %s found in [%s]",correctValuesList.toString(),stringFieldValue),i));
 	}
 
 	private boolean checkRegexp(String re, String lowerCase) {

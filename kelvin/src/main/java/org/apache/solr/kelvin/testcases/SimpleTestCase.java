@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.apache.solr.kelvin.ICondition;
 import org.apache.solr.kelvin.ITestCase;
@@ -69,7 +71,11 @@ public class SimpleTestCase implements ITestCase {
 	private void readConditions(JsonNode config, String configName) throws Exception {
 		if (config.has(configName)) {
 			for (JsonNode condition :  (ArrayNode) config.get(configName)) {
+				try {
 				conditonList.add(SingletonConditionRegistry.instantiate(condition));
+				} catch (Exception e) {
+					Logger.getLogger(this.getClass().getName()).log(Level.SEVERE,"Error in config "+config.toString());
+				}
 			}
 			if (conditonList.isEmpty())
 				throw new Exception("missing conditions in simple test case");
