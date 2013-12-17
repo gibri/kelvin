@@ -40,7 +40,7 @@ public class XmlResponseAnalyzerTest extends TestCase {
 		
 		ra.decode(previousResponses);
 		
-		assert previousResponses.get(XmlResponseAnalyzer.XML_DOM) instanceof Document;
+		assertTrue( previousResponses.get(XmlResponseAnalyzer.XML_DOM) instanceof Document );
 	}
 
 	XmlResponseAnalyzer ra;

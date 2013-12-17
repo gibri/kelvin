@@ -32,17 +32,18 @@ public class ScorersTest extends TestCase {
 		mfs.configure(JsonNodeFactory.instance.objectNode());
 		
 		//must be 0
-		assertEquals( 0.0 ,peek(mfs,"MissingFieldTestEvent").getValue() );
+		String measureName = "misses";
+		assertEquals( 0.0 ,peek(mfs,measureName).getValue() );
 		
 		mfs.update(null, new MissingFieldTestEvent(null,null,null,0));
-		assertEquals( 1.0 ,peek(mfs,"MissingFieldTestEvent").getValue() );
+		assertEquals( 1.0 ,peek(mfs,measureName).getValue() );
 		mfs.update(null, new ExceptionTestEvent(null,null,null));
 		// different base class, shoud not be counted
-		assertEquals( 1.0 ,peek(mfs,"MissingFieldTestEvent").getValue() );
+		assertEquals( 1.0 ,peek(mfs,measureName).getValue() );
 		
 		mfs.update(null, new MissingFieldTestEvent(null,null,null,0));
 		mfs.update(null, new MissingFieldTestEvent(null,null,null,0));
-		assertEquals( 3.0 ,peek(mfs,"MissingFieldTestEvent").getValue() );
+		assertEquals( 3.0 ,peek(mfs,measureName).getValue() );
 	}
 	
 	public void testSimpleScorer() throws Exception {
