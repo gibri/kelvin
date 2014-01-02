@@ -39,7 +39,7 @@ public abstract class QueryPerformer extends Observable implements Closeable, IC
 
 	public void configure(JsonNode config) throws Exception {
 		ResponseAnalyzerLoader loader = new ResponseAnalyzerLoader();
-		loader.configure(config.get("responseAnalyzers"));
+		loader.configure(config.path("responseAnalyzers"));
 		this.responseAnalyzers = loader.getAnalyzers();
 	}
 

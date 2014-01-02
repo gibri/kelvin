@@ -26,6 +26,7 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.apache.solr.kelvin.ConfigurableLoader;
 import org.apache.solr.kelvin.ICondition;
 import org.apache.solr.kelvin.ITestCase;
 import org.apache.solr.kelvin.SingletonConditionRegistry;
@@ -87,7 +88,7 @@ public class SimpleTestCase implements ITestCase {
 	
 	private void readConditions(JsonNode config, String configName) throws Exception {
 		if (config.has(configName)) {
-			for (JsonNode condition :  (ArrayNode) config.get(configName)) {
+			for (JsonNode condition :  (ArrayNode) ConfigurableLoader.assureArray(config.get(configName))) {
 				try {
 				conditonList.add(SingletonConditionRegistry.instantiate(condition));
 				} catch (Exception e) {
