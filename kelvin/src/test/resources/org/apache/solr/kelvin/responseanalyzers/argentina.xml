@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response>
+	<lst name="responseHeader">
+		<int name="status">0</int>
+		<int name="QTime">1</int>
+		<lst name="params">
+			<str name="fl">name,Manufacturer</str>
+			<str name="q">argentina</str>
+		</lst>
+	</lst>
+	<result name="response" numFound="632" start="0">
+		<doc>
+			<str name="Manufacturer">MONDADORI</str>
+			<str name="name">Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">EDT</str>
+			<str name="name">Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">EDT</str>
+			<str name="name">Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">MONDADORI</str>
+			<str name="name">Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">MORELLINI</str>
+			<str name="name">Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">GUIDEMOIZZI</str>
+			<str name="name">Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">EDITORIALE DOMUS</str>
+			<str name="name">Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">WHITE STAR</str>
+			<str name="name">Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">CINQUEMARZO</str>
+			<str name="name">Doriani d'Argentina</str>
+		</doc>
+		<doc>
+			<str name="Manufacturer">WHITE STAR</str>
+			<str name="name">Argentina</str>
+		</doc>
+	</result>
+</response>

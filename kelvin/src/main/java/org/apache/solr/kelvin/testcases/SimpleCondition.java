@@ -34,17 +34,16 @@ import org.apache.solr.kelvin.ConfigurableLoader;
 import org.apache.solr.kelvin.ICondition;
 import org.apache.solr.kelvin.ITestCase;
 import org.apache.solr.kelvin.events.ConditionFailureTestEvent;
+import org.apache.solr.kelvin.events.ConditionsNotMetTestEvent;
 import org.apache.solr.kelvin.events.MissingFieldTestEvent;
 import org.apache.solr.kelvin.events.MissingResultTestEvent;
 import org.apache.solr.kelvin.responseanalyzers.XmlDoclistExtractorResponseAnalyzer;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonObjectFormatVisitor;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
-public class SimpleCondition implements ICondition {
+public class SimpleCondition  extends ListingRowCondition implements ICondition {
 	private List<String> fields;
-	private int length;
 	private List<String> correctValuesList = new ArrayList<String>();
 	
 	public void init(int _len, List<String> _fields, List<String> _values) {
@@ -54,8 +53,8 @@ public class SimpleCondition implements ICondition {
 	}
 
 	public void configure(JsonNode condition) throws Exception {
-		mandatory(condition,"len");
-		int len = condition.get("len").asInt();
+		parseLen(condition);
+		parseReverseConditions(condition);
 		List<String> values = new LinkedList<String>();
 		mandatory(condition, "field");
 		ArrayList<String> realFiels = new ArrayList<String>();
@@ -76,7 +75,7 @@ public class SimpleCondition implements ICondition {
 			readStringArrayOpt(condition.get("values"),values);
 		if (values.size()==0)
 			throw new Exception("missing condition values");
-		init(len, realFiels, values);
+		init(this.length, realFiels, values);
 	}
 
 	public List<String> getFields() {
@@ -91,30 +90,8 @@ public class SimpleCondition implements ICondition {
 		return Collections.unmodifiableList(correctValuesList);
 	}
 
-	/** shourd manufacturer match Manufacturer */
-	private boolean caseInsentiveFieldsName=true;
 	
-	private boolean hasField(JsonNode o, String field) {
-		if (!caseInsentiveFieldsName)
-			return o.has(field);
-		Iterator<String> names = o.fieldNames();
-		while (names.hasNext()) 
-			if (field.equalsIgnoreCase(names.next()))
-				return true;
-		return false;
-	}
 	
-	private JsonNode getField(JsonNode o, String field) {
-		if (!caseInsentiveFieldsName)
-			return o.get(field);
-		Iterator<Entry<String, JsonNode>> i = o.fields();
-		while (i.hasNext()) {
-			Entry<String,JsonNode> e = i.next();
-			if (field.equalsIgnoreCase(e.getKey()))
-				return e.getValue();
-		}
-		throw new NullPointerException();
-	}
 	
 	public List<ConditionFailureTestEvent> verifyConditions(ITestCase testCase,
 			Properties queryParams, Map<String, Object> decodedResponses,
@@ -124,7 +101,8 @@ public class SimpleCondition implements ICondition {
 		if (decodedResponses.containsKey(XmlDoclistExtractorResponseAnalyzer.DOC_LIST)){
 			results = (ArrayNode) decodedResponses.get(XmlDoclistExtractorResponseAnalyzer.DOC_LIST);
 		}
-		for (int i=0; i<length; i++) {
+		int lengthToCheck = getLengthToCheck( results);
+		for (int i=0; i<lengthToCheck; i++) {
 			if (results.size()<=i) {
 				ret.add(new MissingResultTestEvent( testCase, queryParams, "result set too short",i));
 			} else {
@@ -172,8 +150,10 @@ public class SimpleCondition implements ICondition {
 				}
 			}
 		}
-		if (failure)
-			ret.add(new ConditionFailureTestEvent(testCase, queryParams, String.format("not all words %s found in [%s]",correctValuesList.toString(),stringFieldValue),i));
+		if (failure && !reverseConditions)
+			ret.add(new ConditionsNotMetTestEvent(testCase, queryParams, String.format("not all words %s found in [%s]",correctValuesList.toString(),stringFieldValue),i));
+		else if (!failure && reverseConditions)
+			ret.add(new ConditionsNotMetTestEvent(testCase, queryParams, String.format("any of %s found in [%s]",correctValuesList.toString(),stringFieldValue),i));
 	}
 
 	private boolean checkRegexp(String re, String lowerCase) {

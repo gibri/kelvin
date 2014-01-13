@@ -56,19 +56,21 @@ public class XmlDoclistExtractorResponseAnalyzer implements ResponseAnalyzer {
 			ObjectNode oDoc = mapper.createObjectNode();
 			Node subel = doc.getFirstChild();
 			while (subel!=null) {
-				String fieldName = subel.getAttributes().getNamedItem("name").getNodeValue();
-				String elementName = subel.getNodeName();
-				if ("arr".equals(elementName)) {
-					ArrayNode multivaluedField = mapper.createArrayNode();
-					Node mvItem = subel.getFirstChild();
-					while (mvItem!=null) {
-						multivaluedField.add(mvItem.getTextContent());
-						mvItem = mvItem.getNextSibling();
+				if (subel.getNodeType()!=Node.TEXT_NODE) {
+					String fieldName = subel.getAttributes().getNamedItem("name").getNodeValue();
+					String elementName = subel.getNodeName();
+					if ("arr".equals(elementName)) {
+						ArrayNode multivaluedField = mapper.createArrayNode();
+						Node mvItem = subel.getFirstChild();
+						while (mvItem!=null) {
+							multivaluedField.add(mvItem.getTextContent());
+							mvItem = mvItem.getNextSibling();
+						}
+						oDoc.put(fieldName,multivaluedField);
+					} else {
+						String value = subel.getTextContent();
+						oDoc.put(fieldName, value);
 					}
-					oDoc.put(fieldName,multivaluedField);
-				} else {
-					String value = subel.getTextContent();
-					oDoc.put(fieldName, value);
 				}
 				subel = subel.getNextSibling();
 			}

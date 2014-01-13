@@ -1,0 +1,25 @@
+{
+	"anySimple" : {
+		"len":"any",
+		"field":["name","name"],
+		"values":["argentina"]
+	},
+	"anyReverse" : {
+		"len":"any",
+		"reverse":true,
+		"field":["name","name"],
+		"values":["doriani"]
+	},
+	"anyList" : {
+		"len":"any",
+		"type" : "valueList",
+		"field" : "manufacturer",
+		"values" : ["MONDADORI","EDT"]
+	},
+	"anyListReverse" : {
+		"len":"any",
+		"type" : "valueList",
+		"field" : "manufacturer",
+		"values" : ["MONDADORI","EDT","white star"]
+	}
+}

@@ -40,19 +40,15 @@ import org.apache.solr.kelvin.responseanalyzers.XmlDoclistExtractorResponseAnaly
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
-public class ValueListCondition  implements ICondition {
+public class ValueListCondition extends ListingRowCondition  implements ICondition {
 	private String field;
-	private int length;
 	private List<String> correctValuesList;
+	private List<String> correctValuesListCaseInsensitive=new ArrayList<String>();
 	
 	private boolean legacy = false;
 	
 	public String getField() {
 		return field;
-	}
-
-	public int getLength() {
-		return length;
 	}
 
 	public List<String> getCorrectValuesList() {
@@ -63,11 +59,14 @@ public class ValueListCondition  implements ICondition {
 		field = _field;
 		length=_len;
 		correctValuesList=_values;
+		for (String v : _values) {
+			correctValuesListCaseInsensitive.add(v.toLowerCase());
+		}
 	}
 
 	public void configure(JsonNode condition) throws Exception {
-		mandatory(condition,"len");
-		int len = condition.get("len").asInt();
+		parseLen(condition);
+		parseReverseConditions(condition);
 		String fieldName="";
 		List<String> values = new LinkedList<String>();
 		if (condition.has("mode") && condition.get("mode").asText().equals("slug")) {
@@ -83,7 +82,7 @@ public class ValueListCondition  implements ICondition {
 		}
 		if (values.size()==0)
 			throw new Exception("missin condition values");
-		init(len, fieldName, values);
+		init(this.length, fieldName, values);
 	}
 
 	public List<ConditionFailureTestEvent> verifyConditions(ITestCase testCase,
@@ -94,22 +93,23 @@ public class ValueListCondition  implements ICondition {
 		if (decodedResponses.containsKey(XmlDoclistExtractorResponseAnalyzer.DOC_LIST)){
 			results = (ArrayNode) decodedResponses.get(XmlDoclistExtractorResponseAnalyzer.DOC_LIST);
 		}
-		for (int i=0; i<length; i++) {
+		int lengthToCheck = getLengthToCheck( results);
+		for (int i=0; i<lengthToCheck; i++) {
 			if (results.size()<=i) {
 				ret.add(new MissingResultTestEvent( testCase, queryParams, "result set too short",i));
 			} else {
 				JsonNode row = results.get(i);
-				if (!row.has(field)) {
+				if (! hasField(row, field) ) {
 					ret.add(new MissingFieldTestEvent(testCase, queryParams, "missing field "+field+" from result",i));
 				} else {
-					JsonNode fieldValue = row.get(field);
+					JsonNode fieldValue = getField(row,field);
 					fieldValue = ConfigurableLoader.assureArray(fieldValue);
 					boolean found = false;
 					ArrayList<String> allTextValues = new ArrayList<String>();
 					for (int j=0;j<fieldValue.size();j++) {
 						String fieldText = fieldValue.get(j).asText();
 						allTextValues.add(fieldText);
-						if (this.correctValuesList.contains( fieldText ))
+						if (checkContains ( fieldText ))
 						{ found=true; break; }
 						else if (legacy)  {
 							for (String cond : correctValuesList) {
@@ -120,12 +120,23 @@ public class ValueListCondition  implements ICondition {
 							}
 						}
 					}
-					if (!found)
+					if (!found && !reverseConditions)
 						ret.add(new ConditionsNotMetTestEvent(testCase, queryParams, "unexpected vaule ["+StringUtils.join(allTextValues,',')+"] not in "+correctValuesList.toString(), i));
+					else if (found && reverseConditions ) {
+						ret.add(new ConditionsNotMetTestEvent(testCase, queryParams, "["+StringUtils.join(allTextValues,',')+"] matches "+correctValuesList.toString(), i));
+					}
 				}
 			}
 		}
 		return ret;
+	}
+	
+	private boolean checkContains(String fieldText) {
+		if (this.caseInsensitiveValues) {
+			return correctValuesListCaseInsensitive.contains(fieldText.toLowerCase());
+		} else {
+			return this.correctValuesList.contains( fieldText );
+		}
 	}
 
 }
