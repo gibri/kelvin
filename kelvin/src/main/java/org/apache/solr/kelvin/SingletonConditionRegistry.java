@@ -20,6 +20,7 @@ package org.apache.solr.kelvin;
 import java.util.Map;
 import java.util.TreeMap;
 
+import org.apache.solr.kelvin.testcases.DateRangeCondition;
 import org.apache.solr.kelvin.testcases.SimpleCondition;
 import org.apache.solr.kelvin.testcases.ValueListCondition;
 
@@ -36,6 +37,7 @@ public class SingletonConditionRegistry {
 		defaults.put("", SimpleCondition.class);
 		defaults.put("default", SimpleCondition.class);
 		defaults.put("valueList", ValueListCondition.class);
+		defaults.put("dateRange", DateRangeCondition.class);
 		defaults.put("slug", ValueListCondition.class); //legacy
 		registry.addMappingsFromClasses(defaults);
 	}
