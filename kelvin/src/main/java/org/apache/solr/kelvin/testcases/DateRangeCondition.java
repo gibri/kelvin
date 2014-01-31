@@ -39,6 +39,7 @@ import org.apache.solr.schema.DateField;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.google.protobuf.TextFormat.ParseException;
 
 public class DateRangeCondition extends ListingRowCondition implements ICondition  {
 
@@ -49,6 +50,23 @@ public class DateRangeCondition extends ListingRowCondition implements IConditio
 	private Date leftDate;
 	private Date rightDate;
 	
+	
+	public boolean isLeftInclusive() {
+		return leftInclusive;
+	}
+
+	public boolean isRightInclusive() {
+		return rightInclusive;
+	}
+
+	public Date getLeftDate() {
+		return leftDate;
+	}
+
+	public Date getRightDate() {
+		return rightDate;
+	}
+
 	public void configure(JsonNode condition) throws Exception {
 		parseLen(condition);
 		parseReverseConditions(condition);
@@ -62,9 +80,9 @@ public class DateRangeCondition extends ListingRowCondition implements IConditio
 		
 	}
 	
-	private static Pattern rangePattern = Pattern.compile("\\s*([\\[{])([-+0-9a-z:./])+\\s+to\\s+([-+0-9a-z:./])+([\\]})]\\s*",Pattern.CASE_INSENSITIVE) ;
+	private static Pattern rangePattern = Pattern.compile("\\s*([\\[{])([-+0-9a-z:./]+)\\s+to\\s+([-+0-9a-z:./]+)([\\]}])\\s*",Pattern.CASE_INSENSITIVE) ;
 	
-	private void parseRange(String dateRangeString) throws Exception {
+	public void parseRange(String dateRangeString) throws Exception {
 		 Matcher m = rangePattern.matcher(dateRangeString);
 		 if (m.matches()){
 			 leftInclusive = "[".equals(m.group(1));
@@ -78,6 +96,14 @@ public class DateRangeCondition extends ListingRowCondition implements IConditio
 	private Date parseDate(String s) throws Exception {
 		DateField d  = new DateField();
 		return d.parseMath(null, s);
+//		try {
+//			if (s.endsWith("Z") || s.endsWith("z"))
+//				return DateField.parseDate(s.substring(0,s.length()-1));
+//			return DateField.parseDate(s);
+//		} catch (java.text.ParseException e ){
+//			DateField d  = new DateField();
+//			return d.parseMath(null, s);
+//		}
 	}
 
 	public List<ConditionFailureTestEvent> verifyConditions(ITestCase testCase,

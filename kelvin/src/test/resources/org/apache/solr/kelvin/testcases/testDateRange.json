@@ -1,0 +1,8 @@
+{
+	"range" : {
+		"len": 10,
+		"mode": "dateRange",
+		"field": "last_update",
+		"dateRange": "{2014-01-30T22:42:17.347Z to 2014-01-31T07:50:47.237Z]"
+	}
+}

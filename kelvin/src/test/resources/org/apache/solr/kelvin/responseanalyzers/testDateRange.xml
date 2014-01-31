@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+
+<lst name="responseHeader">
+  <int name="status">0</int>
+  <int name="QTime">12</int>
+  <lst name="params">
+    <str name="fl">name,last_update</str>
+    <str name="sort">last_update desc</str>
+    <str name="indent">true</str>
+    <str name="q">argentina</str>
+    <str name="wt">xml</str>
+  </lst>
+</lst>
+<result name="response" numFound="628" start="0">
+  <doc>
+    <date name="last_update">2014-01-31T07:50:54.12Z</date>
+    <str name="name">Logitech M235 Wireless Mouse - ARGENTINA</str></doc>
+  <doc>
+    <date name="last_update">2014-01-31T07:50:47.237Z</date>
+    <str name="name">Segreto Dei Suoi Occhi (Il) - Disponibile dal 02/02/2014</str></doc>
+  <doc>
+    <date name="last_update">2014-01-30T22:42:28.967Z</date>
+    <str name="name">C'era un italiano in Argentina...</str></doc>
+  <doc>
+    <date name="last_update">2014-01-30T22:42:21.02Z</date>
+    <str name="name">La morte del tango. Breve storia politica del tango in Argentina</str></doc>
+  <doc>
+    <date name="last_update">2014-01-30T22:42:21.02Z</date>
+    <str name="name">La muerte del tango. Breve historia política del tango en Argentina</str></doc>
+  <doc>
+    <date name="last_update">2014-01-30T22:42:20.507Z</date>
+    <str name="name">Jorge Mario Bergoglio. Francesco. Insieme. La vita, le idee, le parole del papa che cambierà la Chiesa</str></doc>
+  <doc>
+    <date name="last_update">2014-01-30T22:42:17.917Z</date>
+    <str name="name">La statuetta di bronzo</str></doc>
+  <doc>
+    <date name="last_update">2014-01-30T22:42:17.347Z</date>
+    <str name="name">La serpe e il mirto (1978) ovvero il tempo secondo Aguilar Mendes</str></doc>
+  <doc>
+    <date name="last_update">2014-01-30T22:42:10.83Z</date>
+    <str name="name">Stati di grazia</str></doc>
+  <doc>
+    <date name="last_update">2014-01-30T22:42:09.667Z</date>
+    <str name="name">Grigio tipo settembre</str></doc>
+</result>
+
+<lst name="spellcheck">
+  <lst name="suggestions">
+    <bool name="correctlySpelled">true</bool>
+  </lst>
+</lst>
+</response>
