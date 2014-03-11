@@ -20,6 +20,8 @@ package org.apache.solr.kelvin;
 import java.util.Iterator;
 import java.util.Observable;
 
+import org.apache.solr.kelvin.scorer.EventCollectorScorer;
+import org.apache.solr.kelvin.scorer.MissingFieldScorer;
 import org.apache.solr.kelvin.scorer.MissingResultScorer;
 import org.apache.solr.kelvin.scorer.SimpleScorer;
 import org.apache.solr.kelvin.scorer.TestScorer;
@@ -35,6 +37,8 @@ public class ScorerLoader extends ConfigurableLoader {
 			resources.add(new MissingResultScorer());
 			resources.add(new TestScorer());
 			resources.add(new SimpleScorer());
+			resources.add(new EventCollectorScorer());
+			resources.add(new MissingFieldScorer());
 			JsonNode emptyConfig = JsonNodeFactory.instance.objectNode();
 			for (IConfigurable r : resources) {
 				try {

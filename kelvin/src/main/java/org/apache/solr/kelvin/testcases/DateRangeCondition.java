@@ -39,7 +39,6 @@ import org.apache.solr.schema.DateField;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.google.protobuf.TextFormat.ParseException;
 
 public class DateRangeCondition extends ListingRowCondition implements ICondition  {
 

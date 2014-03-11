@@ -21,8 +21,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import org.apache.solr.kelvin.SingletonConditionRegistry;
-import org.apache.solr.kelvin.SingletonTestRegistry;
+import junit.framework.TestCase;
+
 import org.apache.solr.kelvin.events.ConditionFailureTestEvent;
 import org.apache.solr.kelvin.events.ConditionsNotMetTestEvent;
 import org.apache.solr.kelvin.events.MissingFieldTestEvent;
@@ -31,9 +31,6 @@ import org.apache.solr.kelvin.responseanalyzers.LegacyResponseAnalyzerTest;
 import org.apache.solr.kelvin.responseanalyzers.XmlDoclistExtractorResponseAnalyzerTest;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-
-import junit.framework.TestCase;
 
 public class ValueListConditionTest extends TestCase {
 	

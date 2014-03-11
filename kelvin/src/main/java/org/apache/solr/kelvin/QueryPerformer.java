@@ -33,7 +33,6 @@ import org.apache.solr.kelvin.events.ResponseDecodedTestEvent;
 import org.apache.solr.kelvin.events.TestCaseTestEvent;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ArrayNode;
 
 public abstract class QueryPerformer extends Observable implements Closeable, IConfigurable {
 

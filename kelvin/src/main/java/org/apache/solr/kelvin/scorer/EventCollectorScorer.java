@@ -29,7 +29,6 @@ import java.util.TreeSet;
 import org.apache.solr.kelvin.ConfigurableLoader;
 import org.apache.solr.kelvin.Measure;
 import org.apache.solr.kelvin.Scorer;
-import org.apache.solr.kelvin.TestEvent;
 import org.apache.solr.kelvin.events.ExceptionTestEvent;
 
 import com.fasterxml.jackson.databind.JsonNode;

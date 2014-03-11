@@ -5,8 +5,6 @@ import static org.apache.solr.kelvin.testcases.SimpleTestCase.mandatory;
 import java.util.Iterator;
 import java.util.Map.Entry;
 
-import org.apache.solr.kelvin.ICondition;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 

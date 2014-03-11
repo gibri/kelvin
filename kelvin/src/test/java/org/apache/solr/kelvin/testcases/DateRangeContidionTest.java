@@ -1,19 +1,17 @@
 package org.apache.solr.kelvin.testcases;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import junit.framework.TestCase;
+
 import org.apache.solr.kelvin.events.ConditionFailureTestEvent;
 import org.apache.solr.kelvin.events.ConditionsNotMetTestEvent;
-import org.apache.solr.kelvin.events.MissingFieldTestEvent;
 import org.apache.solr.kelvin.responseanalyzers.XmlDoclistExtractorResponseAnalyzerTest;
 
 import com.fasterxml.jackson.databind.JsonNode;
-
-import junit.framework.TestCase;
 
 public class DateRangeContidionTest extends TestCase {
 

@@ -20,14 +20,13 @@ package org.apache.solr.kelvin.responseanalyzers;
 import java.util.HashMap;
 import java.util.Map;
 
+import junit.framework.TestCase;
+
 import org.apache.commons.io.IOUtils;
 import org.apache.solr.kelvin.QueryPerformer;
-import org.w3c.dom.Document;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-
-import junit.framework.TestCase;
 
 public class JsonResponseAnalyzerTest extends TestCase {
 	public void testNoResultsResponse() throws Exception {

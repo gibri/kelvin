@@ -17,7 +17,6 @@
  */
 package org.apache.solr.kelvin.responseanalyzers;
 
-import java.util.List;
 import java.util.Map;
 
 import org.apache.solr.kelvin.QueryPerformer;

@@ -17,7 +17,6 @@
  */
 package org.apache.solr.kelvin;
 
-import java.util.List;
 import java.util.Properties;
 
 public class TestEvent {
