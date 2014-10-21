@@ -23,6 +23,8 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -63,7 +65,7 @@ public class App
     public App(String [] args) {
     	Options options = new Options();
     	
-    	options.addOption("c", false, "configuration file eg kelvin.conf");
+    	options.addOption("c", true, "configuration file eg kelvin.conf");
     	options.addOption(new Option("d", true,"directory containing tests"));
     	options.addOption(new Option("e", true,"default encoding"));
     	
@@ -226,10 +228,15 @@ public class App
 		ArrayNode list = ConfigurableLoader.assureArray(node);
 		for (int i=0; i<list.size(); i++) {
 			JsonNode config =list.get(i);
-			ITestCase t = SingletonTestRegistry.instantiate(config);
-			t.configure(config);
-			testCases.add(t);
+			try {
+				ITestCase t = SingletonTestRegistry.instantiate(config);
+				t.configure(config);
+				testCases.add(t);
+			} catch (Exception e) {
+				logger.log(Level.SEVERE,"error reading "+config.toString(),e);
+			}
 		}
 	}
-	
+
+	private static Logger logger = Logger.getLogger(App.class.getName());
 }

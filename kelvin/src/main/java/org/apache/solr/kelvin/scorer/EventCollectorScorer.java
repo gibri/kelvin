@@ -18,6 +18,8 @@
 package org.apache.solr.kelvin.scorer;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,6 +31,7 @@ import java.util.TreeSet;
 import org.apache.solr.kelvin.ConfigurableLoader;
 import org.apache.solr.kelvin.Measure;
 import org.apache.solr.kelvin.Scorer;
+import org.apache.solr.kelvin.events.ConditionFailureTestEvent;
 import org.apache.solr.kelvin.events.ExceptionTestEvent;
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -39,6 +42,8 @@ public class EventCollectorScorer extends Scorer {
 	private Map<Class<?>, List<Object>> collectedEvents = new HashMap<Class<?>, List<Object>>();
 	
 	private Set<String> excludeList = new TreeSet<String>();
+	
+	private Map<String,Integer> synteticCounters = new HashMap<String, Integer>();
 	
 	public void update(Observable o, Object arg) {
 		if (excludeList.contains(arg.getClass().getName()))
@@ -51,6 +56,13 @@ public class EventCollectorScorer extends Scorer {
 			collectedEvents.put(eventClass, new ArrayList<Object>());
 		}
 		collectedEvents.get(eventClass).add(arg);
+		if (arg!=null && arg instanceof ConditionFailureTestEvent) {
+			String key = ((ConditionFailureTestEvent)arg).getParameters().toString();
+			if (!synteticCounters.containsKey(key))
+				synteticCounters.put(key,1);
+			else
+				synteticCounters.put(key,synteticCounters.get(key)+1);
+		}
 	}
 
 	@Override
@@ -87,7 +99,22 @@ public class EventCollectorScorer extends Scorer {
 			}
 		}
 		sb.append("End Collected Events ===================================================\n");
+		sb.append("Syntetic Counters =======================================================\n");
+		List<Entry<String, Integer>>  sortedEvents = new ArrayList<Map.Entry<String,Integer>>(
+				synteticCounters.entrySet());
+		Collections.sort(sortedEvents, new Comparator<Entry<String, Integer>>() {
 
+			public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
+				int ret = o1.getValue() - o2.getValue();
+				if (ret != 0 ) return ret;
+				return o1.getKey().compareTo(o2.getKey());
+			}
+		});
+		
+		for (Entry<String, Integer> e : sortedEvents ) {
+			sb.append(e.getKey()).append("\t").append(e.getValue()).append('\n');
+		}
+		sb.append("End Syntetic Counters =======================================================\n");
 		return sb.toString();
 	}
 }
